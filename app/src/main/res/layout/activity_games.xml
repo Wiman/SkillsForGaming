@@ -116,7 +116,9 @@
                 android:id="@+id/toggleButton2"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="ToggleButton" />
+                android:text="ToggleButton"
+                android:textOff="Nej"
+                android:textOn="Ja"/>
 
             <TextView
                 android:id="@+id/textView4"
@@ -129,7 +131,9 @@
                 android:id="@+id/toggleButton3"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="ToggleButton" />
+                android:text="ToggleButton"
+                android:textOff="Nej"
+                android:textOn="Ja"/>
 
             <Button
                 android:id="@+id/button7"

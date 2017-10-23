@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.andreas.game.MainActivity">
 
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         tools:layout_constraintLeft_creator="1" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button3"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -44,7 +44,7 @@
         android:layout_marginRight="8dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
