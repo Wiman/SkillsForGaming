@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class SkillsActivity extends AppCompatActivity {
     int numberOfCheckboxesChecked;
-    string API = "http://afgamingserver.azurewebsites.net/api/gaming";
+   // string API = "http://afgamingserver.azurewebsites.net/api/gaming";
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -51,13 +51,22 @@ public class SkillsActivity extends AppCompatActivity {
                 OUTPUT.append("First skill:").append(Ledarskapsförmåga.isChecked());
 
                 //Toast.makeText(SkillsActivity.this, OUTPUT.toString(),Toast.LENGTH_LONG).show();
-                if(Konfliktlösningsförmåga.isChecked() && Sammarbetsförmåga.isChecked() && Fokus.isChecked()){
+                if(Ansvarstagande.isChecked() && Initiativtagare.isChecked()){
 
-                   Toast.makeText(SkillsActivity.this,"WoW och LoL",Toast.LENGTH_LONG).show();
+                   Toast.makeText(SkillsActivity.this,"Cs:Go och LoL",Toast.LENGTH_LONG).show();
 
 
                 }
 
+                if(Tålamod.isChecked() && Konfliktlösningsförmåga.isChecked() || Tålamod.isChecked() || Konfliktlösningsförmåga.isChecked()){
+
+                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW eller LoL",Toast.LENGTH_LONG).show();
+                }
+
+                if (Kommunikationsförmåga.isChecked() && Tålamod.isChecked()){
+                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs:go eller WoW ",Toast.LENGTH_LONG).show();
+
+                }
 
 
 

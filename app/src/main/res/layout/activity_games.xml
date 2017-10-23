@@ -6,47 +6,149 @@
     android:layout_height="match_parent"
     tools:context="com.example.andreas.game.GamesActivity">
 
-    <HorizontalScrollView
-        android:layout_width="156dp"
-        android:layout_height="61dp"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="4dp"
         app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="4dp"
         tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="4dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/gameTxt"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Game"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/playTimeTxt"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:inputType="text|number"
+                android:text="Playtime"
+                app:layout_constraintLeft_toLeftOf="@+id/rankTxt"
+                app:layout_constraintRight_toRightOf="@+id/rankTxt"
+                app:layout_constraintTop_toBottomOf="@+id/rankTxt"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/rankTxt"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Rank"
+                app:layout_constraintLeft_toLeftOf="@+id/gameTxt"
+                app:layout_constraintRight_toRightOf="@+id/gameTxt"
+                app:layout_constraintTop_toBottomOf="@+id/gameTxt"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/gameTextOne"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="39dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="45dp"
+                android:text="TextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button7"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fråga 1:"
+                tools:text="Fråga 1:" />
+
+            <ToggleButton
+                android:id="@+id/fragaEttBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textOff="Nej"
+                android:textOn="Ja" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fråga 2:" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fråga 3:" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
 
             <Button
-                android:id="@+id/Dota"
-                android:layout_width="154dp"
-                android:layout_height="wrap_content"
-                android:text="Dota"
-                tools:layout_editor_absoluteX="137dp"
-                tools:layout_editor_absoluteY="16dp" />
+                android:id="@+id/button7"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="64dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Submit"
+                android:textColorLink="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
 
-            <Button
-                android:id="@+id/Cs:Go"
-                android:layout_width="154dp"
-                android:layout_height="wrap_content"
-                android:text="Cs:Go"
-                tools:layout_editor_absoluteX="143dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <Button
-                android:id="@+id/WoW"
-                android:layout_width="154dp"
-                android:layout_height="wrap_content"
-                android:text="WoW"
-                tools:layout_editor_absoluteX="152dp"
-                tools:layout_editor_absoluteY="19dp" />
         </LinearLayout>
-    </HorizontalScrollView>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
