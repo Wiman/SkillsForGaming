@@ -38,7 +38,7 @@
                 android:layout_marginTop="44dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Game"
+                android:hint="Game"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_constraintLeft_creator="1"
@@ -51,7 +51,7 @@
                 android:layout_marginTop="32dp"
                 android:ems="10"
                 android:inputType="text|number"
-                android:text="Playtime"
+                android:hint="Playtime"
                 app:layout_constraintLeft_toLeftOf="@+id/rankTxt"
                 app:layout_constraintRight_toRightOf="@+id/rankTxt"
                 app:layout_constraintTop_toBottomOf="@+id/rankTxt"
@@ -66,7 +66,7 @@
                 android:layout_marginTop="32dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Rank"
+                android:hint="Rank"
                 app:layout_constraintLeft_toLeftOf="@+id/gameTxt"
                 app:layout_constraintRight_toRightOf="@+id/gameTxt"
                 app:layout_constraintTop_toBottomOf="@+id/gameTxt"
@@ -95,8 +95,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fråga 1:"
-                tools:text="Fråga 1:" />
+                android:text="Blir du lätt stressad i spelet?"
+                tools:text="Blir du lätt stressad i spelet?" />
 
             <ToggleButton
                 android:id="@+id/fragaEttBtn"
@@ -110,26 +110,72 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Fråga 2:" />
+                android:text="Är du en ledare i spelet?" />
 
             <ToggleButton
                 android:id="@+id/toggleButton2"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="ToggleButton" />
+                android:text="ToggleButton"
+                android:textOff="Nej"
+                android:textOn="Ja"/>
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Fråga 3:" />
+                android:text="Har du skapat ett lag?" />
 
             <ToggleButton
                 android:id="@+id/toggleButton3"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="ToggleButton" />
+                android:text="ToggleButton"
+                android:textOff="Nej"
+                android:textOn="Ja"/>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Spelar du oftast i lag eller ensam?" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="Spelar solo"
+                android:textOn="Spelar i lag"/>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Deltagit i någon turnering?" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="Nej"
+                android:textOn="Ja"/>
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Spelar du olika roller?" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton6"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton"
+                android:textOff="Nej"
+                android:textOn="Ja"/>
 
             <Button
                 android:id="@+id/button7"
@@ -147,8 +193,16 @@
                 tools:layout_constraintBottom_creator="1"
                 tools:layout_constraintLeft_creator="1"
                 tools:layout_constraintTop_creator="1" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:text="HEJ TITTA PÅ MIG"
+                android:visibility="invisible"/>
 
         </LinearLayout>
+
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

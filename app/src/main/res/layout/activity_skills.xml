@@ -9,9 +9,10 @@
     tools:layout_editor_absoluteY="81dp">
 
     <CheckBox
-        android:id="@+id/Konfliktlösningsförmåga"
-        android:layout_width="wrap_content"
+        android:id="@+id/Initiativtagare"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginStart="2dp"
         android:layout_marginTop="66dp"
@@ -32,12 +33,44 @@
         app:layout_constraintStart_toStartOf="@+id/Konfliktlösningsförmåga"
         app:layout_constraintTop_toBottomOf="@+id/Konfliktlösningsförmåga"
         tools:layout_constraintLeft_creator="1"
+=======
+        android:layout_marginBottom="81dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Initiativtagare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/getGame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text="Get Games"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/Ansvarstagande"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ansvarstagande"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/Sammarbetsförmåga"
-        android:layout_width="wrap_content"
+        android:id="@+id/Problemlösning"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginEnd="17dp"
         android:text="Sammarbetsförmåga"
@@ -45,12 +78,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Konfliktlösningsförmåga"
         tools:layout_constraintBaseline_creator="1"
+=======
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Problemlösning"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         tools:layout_constraintLeft_creator="1" />
 
     <CheckBox
         android:id="@+id/Flexibel"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
@@ -73,13 +117,37 @@
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toEndOf="@+id/Flexibel"
+=======
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:text="Flexibel"
+        app:layout_constraintBottom_toTopOf="@+id/Problemlösning"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_weight="1"
+        android:text="Prioriteringskompetens"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/Problemlösning"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/Problemlösning"
-        android:layout_width="wrap_content"
+        android:id="@+id/Ledarskapsförmåga"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -88,24 +156,44 @@
         app:layout_constraintTop_toBottomOf="@+id/Flexibel"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1" />
+=======
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:text="Ledarskapsförmåga"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Initiativtagare"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
 
     <CheckBox
-        android:id="@+id/Fokus"
-        android:layout_width="wrap_content"
+        android:id="@+id/Kommunikationsförmåga"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="13dp"
         android:text="Fokus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
+=======
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:text="Kommunikationsförmåga"
+        app:layout_constraintLeft_toLeftOf="@+id/Konfliktlösningsförmåga"
+        app:layout_constraintTop_toBottomOf="@+id/Konfliktlösningsförmåga"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/Prioriteringsförmåga"
-        android:layout_width="wrap_content"
+        android:id="@+id/Sammarbetsförmåga"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="18dp"
@@ -115,24 +203,62 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
+=======
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_weight="1"
+        android:text="Sammarbetsförmåga"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Konfliktlösningsförmåga"
+        app:layout_constraintLeft_toRightOf="@+id/Kommunikationsförmåga"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <CheckBox
+        android:id="@+id/Ansvarstagande"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Ansvarstagande"
+        app:layout_constraintLeft_toRightOf="@+id/Prioriteringsförmåga"
+        app:layout_constraintRight_toRightOf="@+id/Besluttagningförmåga"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
 
     <CheckBox
         android:id="@+id/Besluttagningförmåga"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginEnd="21dp"
         android:layout_marginTop="13dp"
         android:text="Besluttagningförmåga"
         app:layout_constraintEnd_toEndOf="parent"
+=======
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="13dp"
+        android:layout_weight="1"
+        android:text="Besluttagningförmåga"
+        app:layout_constraintRight_toRightOf="parent"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/Initiativtagare"
-        android:layout_width="wrap_content"
+        android:id="@+id/Fokus"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="14dp"
@@ -159,10 +285,21 @@
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
+=======
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_weight="1"
+        android:text="Fokus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_constraintLeft_creator="1"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/textView2"
+<<<<<<< HEAD
         android:layout_width="407dp"
         android:layout_height="42dp"
         android:layout_marginBottom="43dp"
@@ -202,12 +339,57 @@
         app:layout_constraintBottom_toBottomOf="@+id/Ansvarstagande"
         app:layout_constraintEnd_toStartOf="@+id/Ansvarstagande"
         app:layout_constraintStart_toStartOf="@+id/Ansvarstagande"
+=======
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="57dp"
+        android:layout_weight="1"
+        android:text="Anpassningskompetens"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Flexibel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Kommunikationsförmåga"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <CheckBox
+        android:id="@+id/Konfliktlösningsförmåga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="66dp"
+        android:layout_weight="1"
+        android:text="Konfliktlösningsförmåga"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginTop="57dp"
+        android:layout_weight="1"
+        android:text="Organisationskompetens"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Ledarskapsförmåga"
+        app:layout_constraintLeft_toRightOf="@+id/Initiativtagare"
+        app:layout_constraintRight_toRightOf="@+id/Initiativtagare"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         app:layout_constraintTop_toTopOf="@+id/Prioriteringsförmåga"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
+<<<<<<< HEAD
     <CheckBox
         android:id="@+id/Ansvarstagande"
         android:layout_width="wrap_content"
@@ -220,14 +402,31 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/Besluttagningförmåga"
         app:layout_constraintStart_toEndOf="@+id/Ledarskapsförmåga"
+=======
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Relationskompetens"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Konfliktlösningsförmåga"
+        app:layout_constraintLeft_toLeftOf="@+id/Konfliktlösningsförmåga"
+        app:layout_constraintRight_toLeftOf="@+id/Sammarbetsförmåga"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
 
     <CheckBox
-        android:id="@+id/Ledarskapsförmåga"
-        android:layout_width="wrap_content"
+        android:id="@+id/Tålamod"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
         android:layout_marginEnd="57dp"
         android:layout_marginStart="16dp"
@@ -236,12 +435,22 @@
         app:layout_constraintEnd_toStartOf="@+id/getGame"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Initiativtagare"
+=======
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="Tålamod"
+        app:layout_constraintLeft_toRightOf="@+id/Kommunikationsförmåga"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
-    <Button
-        android:id="@+id/getGame"
+    <CheckBox
+        android:id="@+id/Prioriteringsförmåga"
         android:layout_width="0dp"
+<<<<<<< HEAD
         android:layout_height="48dp"
         android:layout_marginBottom="19dp"
         android:layout_marginEnd="3dp"
@@ -255,4 +464,17 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
+=======
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_weight="1"
+        android:text="Prioriteringsförmåga"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fokus"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
 </android.support.constraint.ConstraintLayout>

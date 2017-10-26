@@ -13,13 +13,21 @@ import android.widget.Toast;
 
 public class SkillsActivity extends AppCompatActivity {
     int numberOfCheckboxesChecked = 0;
+<<<<<<< HEAD
     // string API = "http://afgamingserver.azurewebsites.net/api/gaming";
+=======
+   // string API = "http://afgamingserver.azurewebsites.net/api/gaming";
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
 
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_skills);
+<<<<<<< HEAD
         // final int checkBoxCount = 0;
+=======
+       // final int checkBoxCount = 0;
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
 
         final CheckBox Konfliktlösningsförmåga = (CheckBox) findViewById(R.id.Konfliktlösningsförmåga);
         final CheckBox Kommunikationsförmåga = (CheckBox) findViewById(R.id.Kommunikationsförmåga);
@@ -55,6 +63,7 @@ public class SkillsActivity extends AppCompatActivity {
                 OUTPUT.append("First skill:").append(Ledarskapsförmåga.isChecked());
 
                 //Toast.makeText(SkillsActivity.this, OUTPUT.toString(),Toast.LENGTH_LONG).show();
+<<<<<<< HEAD
                 if (Konfliktlösningsförmåga.isChecked() != true){
 
                     //Toast.makeText(SkillsActivity.this,"BLÄÄÄ",Toast.LENGTH_LONG).show();
@@ -74,14 +83,24 @@ public class SkillsActivity extends AppCompatActivity {
 
                 }
                 else if((Tålamod.isChecked() && Konfliktlösningsförmåga.isChecked() || Konfliktlösningsförmåga.isChecked()) && !Tålamod.isChecked()){
+=======
+                if(Ansvarstagande.isChecked() && Initiativtagare.isChecked()){
+                   Toast.makeText(SkillsActivity.this,"Cs:Go och LoL",Toast.LENGTH_LONG).show();
+                }
+
+                if(Tålamod.isChecked() && Konfliktlösningsförmåga.isChecked() || Tålamod.isChecked() || Konfliktlösningsförmåga.isChecked()){
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW eller LoL",Toast.LENGTH_LONG).show();
                 }
                 else if (Kommunikationsförmåga.isChecked() && Tålamod.isChecked()){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs:go eller WoW ",Toast.LENGTH_LONG).show();
                 }
+<<<<<<< HEAD
                 else if(!Kommunikationsförmåga.isChecked()  || !Tålamod.isChecked() || !Konfliktlösningsförmåga.isChecked() || !Ansvarstagande.isChecked() || !Initiativtagare.isChecked() || !Prioriteringsförmåga.isChecked() ){
                     Toast.makeText(SkillsActivity.this,"Cs:go/WoW/LoL är spel du söker",Toast.LENGTH_LONG).show();
                 }
+=======
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
 
 
             }
@@ -170,7 +189,11 @@ public class SkillsActivity extends AppCompatActivity {
         Sammarbetsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+<<<<<<< HEAD
                 if (isChecked && numberOfCheckboxesChecked >= 2) {
+=======
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
                     Sammarbetsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -190,7 +213,11 @@ public class SkillsActivity extends AppCompatActivity {
         Prioriteringsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+<<<<<<< HEAD
                 if (isChecked && numberOfCheckboxesChecked >= 2) {
+=======
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
                     Prioriteringsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -210,7 +237,11 @@ public class SkillsActivity extends AppCompatActivity {
         Tålamod.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+<<<<<<< HEAD
                 if (isChecked && numberOfCheckboxesChecked >= 2) {
+=======
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+>>>>>>> cef9368f500a108b0a0c6110a346232f00b5db25
                     Tålamod.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
