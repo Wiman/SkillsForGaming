@@ -92,7 +92,7 @@
                 tools:layout_constraintTop_creator="1" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/gameView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Blir du lätt stressad i spelet?"
@@ -106,7 +106,7 @@
                 android:textOn="Ja" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/gameView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -121,7 +121,7 @@
                 android:textOn="Ja"/>
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/gameView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -135,7 +135,7 @@
                 android:textOff="Nej"
                 android:textOn="Ja"/>
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/gameView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -149,7 +149,7 @@
                 android:textOff="Spelar solo"
                 android:textOn="Spelar i lag"/>
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/gameView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -163,7 +163,7 @@
                 android:textOff="Nej"
                 android:textOn="Ja"/>
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/gameView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -194,7 +194,7 @@
                 tools:layout_constraintLeft_creator="1"
                 tools:layout_constraintTop_creator="1" />
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/gameView8"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginTop="20dp"
