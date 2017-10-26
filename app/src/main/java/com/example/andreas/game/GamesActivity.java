@@ -16,8 +16,8 @@ import static android.R.attr.editable;
 public class GamesActivity extends AppCompatActivity {
     Button button7;
     EditText gameTxt, rankTxt, playTimeTxt;
-    TextView gameTextOne;
-    ToggleButton fragaEttBtn;
+    TextView gameTextOne, textView8;
+    ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,24 +30,40 @@ public class GamesActivity extends AppCompatActivity {
         playTimeTxt = (EditText) findViewById(R.id.playTimeTxt);
         button7 = (Button) findViewById(R.id.button7);
         gameTextOne = (TextView) findViewById(R.id.gameTextOne);
+        textView8 = (TextView) findViewById(R.id.textView8);
         fragaEttBtn = (ToggleButton) findViewById(R.id.fragaEttBtn);
+        toggleButton2 = (ToggleButton) findViewById(R.id.toggleButton2);
+        toggleButton3 = (ToggleButton) findViewById(R.id.toggleButton3);
+        toggleButton4 = (ToggleButton) findViewById(R.id.toggleButton4);
+
 
 
         button7.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Log.v("EditTest", gameTxt.getText().toString());
+                        Log.v("EditText", gameTxt.getText().toString());
                         String game = gameTxt.getText().toString();
 
-                        Log.d("EditTest", rankTxt.getText().toString());
+                        Log.d("EditText", rankTxt.getText().toString());
                         String rank = rankTxt.getText().toString();
 
-                        Log.e("EditTest", playTimeTxt.getText().toString());
+                        Log.e("EditText", playTimeTxt.getText().toString());
                         String playTime = playTimeTxt.getText().toString();
 
-                        gameTextOne.setText(SpelInfo(game, rank, playTime)); //test it
+                        Log.i("EditText", fragaEttBtn.getText().toString());
+                        String toggleEtt = fragaEttBtn.getText().toString();
+                        String toggleTva = toggleButton2.getText().toString();
+                        String toggleTre = toggleButton3.getText().toString();
+                        String toggleFyra = toggleButton4.getText().toString();
+
+
+                        gameTextOne.setText(SpelInfo(game, rank, playTime, toggleEtt)); //test it
                         gameTextOne.setVisibility(View.VISIBLE);
+
+                        textView8.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra));
+                        textView8.setVisibility(View.VISIBLE);
+
                     }
                 }
         );
@@ -66,7 +82,7 @@ public class GamesActivity extends AppCompatActivity {
 
     }
 
-    public String SpelInfo(String game, String rank, String playTime) {
+    public String SpelInfo(String game, String rank, String playTime, String toggleEtt) {
 
         String butt = "";
         int points = 0;
@@ -123,12 +139,62 @@ public class GamesActivity extends AppCompatActivity {
             butt = "Din inGameTime är för låg";
         }
 
+        if (toggleEtt.equals("Ja")){
+            butt = butt + "\nWhoopWhoop";
+        }
+        else {
+            butt = butt + "\nIngen WhoopWhoop";
+        }
+
+
+
+
+
         return butt;
     }
 
-    public int Resultat(int res) {
-        int result = 0;
-        result = result + res;
+    public String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra) {
+        String result="";
+
+        if (toggleEtt.equals("Ja")){
+            result = result + "Spelaren blir lätt stressad";
+        }
+        else {
+            result = result + "Spelaren blir inte stressad av spelet";
+        }
+        if (toggleTva.equals("Ja")){
+            result = result + "\nSpelaren är en ledare";
+        }
+        else {
+            result = result + "\nSpelaren är inte en ledare";
+        }
+        if (toggleTre.equals("Ja")){
+            result = result + "\nSpelaren har skapat ett lag";
+        }
+        else {
+            result = result + "\nSpelaren har inte skapat ett lag";
+        }
+        if (toggleFyra.equals("Spelar i lag")){
+            result = result + "\nSpelaren är en teamplayer";
+        }
+        else {
+            result = result + "\nSpelaren är solo spelare";
+        }
+
+
+
+
         return result;
     }
 }
+/*Blir du lätt stressad i spelet?
+Är du en ledare i spelet?
+Har du skapat ett lag?
+Spelar du oftast i lag eller ensam?
+Deltagit i någon turnering?
+Spelar du olika roller?
+Vilken roll spelar du mest?
+Tar du fram eller följer du strats?
+Vilket språk spelar ni på? (Kan vara egen sida, mera för att utvärdera en “hård kompetens”)
+Hur ofta måste du carria?
+*/

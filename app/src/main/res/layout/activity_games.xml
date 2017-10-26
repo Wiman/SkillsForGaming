@@ -193,8 +193,16 @@
                 tools:layout_constraintBottom_creator="1"
                 tools:layout_constraintLeft_creator="1"
                 tools:layout_constraintTop_creator="1" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:text="HEJ TITTA PÅ MIG"
+                android:visibility="invisible"/>
 
         </LinearLayout>
+
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

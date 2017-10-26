@@ -94,7 +94,7 @@ public class SkillsActivity extends AppCompatActivity {
         Kommunikationsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 2) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
                     Kommunikationsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -114,7 +114,7 @@ public class SkillsActivity extends AppCompatActivity {
         Ansvarstagande.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 2) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
                     Ansvarstagande.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -134,7 +134,7 @@ public class SkillsActivity extends AppCompatActivity {
         Initiativtagare.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 2) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
                     Initiativtagare.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -154,7 +154,7 @@ public class SkillsActivity extends AppCompatActivity {
         Sammarbetsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 2) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
                     Sammarbetsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -174,7 +174,7 @@ public class SkillsActivity extends AppCompatActivity {
         Prioriteringsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 2) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
                     Prioriteringsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -194,7 +194,7 @@ public class SkillsActivity extends AppCompatActivity {
         Tålamod.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 2) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
                     Tålamod.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
