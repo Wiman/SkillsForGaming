@@ -1,5 +1,6 @@
 package com.example.andreas.game;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,7 +31,7 @@ public class GamesActivity extends AppCompatActivity {
         playTimeTxt = (EditText) findViewById(R.id.playTimeTxt);
         button7 = (Button) findViewById(R.id.button7);
         gameTextOne = (TextView) findViewById(R.id.gameTextOne);
-        textView8 = (TextView) findViewById(R.id.textView8);
+        textView8 = (TextView) findViewById(R.id.gameView8);
         fragaEttBtn = (ToggleButton) findViewById(R.id.fragaEttBtn);
         toggleButton2 = (ToggleButton) findViewById(R.id.toggleButton2);
         toggleButton3 = (ToggleButton) findViewById(R.id.toggleButton3);
@@ -61,9 +62,9 @@ public class GamesActivity extends AppCompatActivity {
                         gameTextOne.setText(SpelInfo(game, rank, playTime, toggleEtt)); //test it
                         gameTextOne.setVisibility(View.VISIBLE);
 
-                        textView8.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra));
-                        textView8.setVisibility(View.VISIBLE);
-
+                        //textView8.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra));
+                        //textView8.setVisibility(View.VISIBLE);
+                        startActivity(new Intent(getApplicationContext(),GResActivity.class));
                     }
                 }
         );
@@ -153,7 +154,7 @@ public class GamesActivity extends AppCompatActivity {
         return butt;
     }
 
-    public String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra) {
+   /* public String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra) {
         String result="";
 
         if (toggleEtt.equals("Ja")){
@@ -185,7 +186,7 @@ public class GamesActivity extends AppCompatActivity {
 
 
         return result;
-    }
+    }*/
 }
 /*Blir du lätt stressad i spelet?
 Är du en ledare i spelet?
