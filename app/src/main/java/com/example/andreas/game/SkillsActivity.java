@@ -55,18 +55,25 @@ public class SkillsActivity extends AppCompatActivity {
                 OUTPUT.append("First skill:").append(Ledarskapsförmåga.isChecked());
 
                 //Toast.makeText(SkillsActivity.this, OUTPUT.toString(),Toast.LENGTH_LONG).show();
-                if(Ansvarstagande.isChecked() && Initiativtagare.isChecked()){
-                    Toast.makeText(SkillsActivity.this,"Cs:Go och LoL",Toast.LENGTH_LONG).show();
+                if(Tålamod.isChecked() ==false  && Initiativtagare.isChecked()==false && Ansvarstagande.isChecked()==false && Prioriteringsförmåga.isChecked()==false && Kommunikationsförmåga.isChecked()==false && Konfliktlösningsförmåga.isChecked()==false){
+                    Toast.makeText(SkillsActivity.this,"Du vill inte ha en specifik typ av gamer!",Toast.LENGTH_LONG).show();
                 }
 
-                if(Tålamod.isChecked() && Konfliktlösningsförmåga.isChecked() || Tålamod.isChecked() || Konfliktlösningsförmåga.isChecked()){
-                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW eller LoL",Toast.LENGTH_LONG).show();
+                if(Tålamod.isChecked()==false && Konfliktlösningsförmåga.isChecked()==false && Tålamod.isChecked()==false){
+                   // Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW eller LoL",Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(SkillsActivity.this, "Du hade skoj", Toast.LENGTH_LONG).show();
                 }
 
-                if (Kommunikationsförmåga.isChecked() && Tålamod.isChecked()){
+                if(Kommunikationsförmåga.isChecked() && Tålamod.isChecked()){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs:go eller WoW ",Toast.LENGTH_LONG).show();
                 }
 
+/*                if(Ansvarstagande.isChecked() && Konfliktlösningsförmåga.isChecked() || Initiativ.isChecked() || Konfliktlösningsförmåga.isChecked()){
+                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar CS eller LoL",Toast.LENGTH_LONG).show();
+                }
+*/
 
             }
 
