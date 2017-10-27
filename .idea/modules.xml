@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\danmx\Documents\GitHub\SkillsForGaming\Game.iml" filepath="C:\Users\danmx\Documents\GitHub\SkillsForGaming\Game.iml" />
-      <module fileurl="file://C:\Users\danmx\Documents\GitHub\SkillsForGaming\SkillsForGameing.iml" filepath="C:\Users\danmx\Documents\GitHub\SkillsForGaming\SkillsForGameing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SkillsForGaming.iml" filepath="$PROJECT_DIR$/SkillsForGaming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Game.iml" filepath="$PROJECT_DIR$/Game.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

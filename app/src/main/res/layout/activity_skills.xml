@@ -247,6 +247,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:text="Tålamod"
+
         app:layout_constraintLeft_toRightOf="@+id/Kommunikationsförmåga"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:layout_constraintLeft_creator="1"
@@ -261,6 +262,9 @@
         android:layout_marginTop="18dp"
         android:layout_weight="1"
         android:text="Prioriteringsförmåga"
+        android:textOn="PrioriteringsförmågaOn"
+
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Fokus"
         tools:layout_constraintLeft_creator="1"

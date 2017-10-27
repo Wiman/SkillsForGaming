@@ -30,7 +30,7 @@ public class GamesActivity extends AppCompatActivity {
         playTimeTxt = (EditText) findViewById(R.id.playTimeTxt);
         button7 = (Button) findViewById(R.id.button7);
         gameTextOne = (TextView) findViewById(R.id.gameTextOne);
-        textView8 = (TextView) findViewById(R.id.textView8);
+        //textView8 = (TextView) findViewById(R.id.textView8);
         fragaEttBtn = (ToggleButton) findViewById(R.id.fragaEttBtn);
         toggleButton2 = (ToggleButton) findViewById(R.id.toggleButton2);
         toggleButton3 = (ToggleButton) findViewById(R.id.toggleButton3);

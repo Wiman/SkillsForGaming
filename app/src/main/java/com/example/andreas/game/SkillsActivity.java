@@ -13,13 +13,13 @@ import android.widget.Toast;
 
 public class SkillsActivity extends AppCompatActivity {
     int numberOfCheckboxesChecked = 0;
-   // string API = "http://afgamingserver.azurewebsites.net/api/gaming";
+    // string API = "http://afgamingserver.azurewebsites.net/api/gaming";
 
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_skills);
-       // final int checkBoxCount = 0;
+        // final int checkBoxCount = 0;
 
         final CheckBox Konfliktlösningsförmåga = (CheckBox) findViewById(R.id.Konfliktlösningsförmåga);
         final CheckBox Kommunikationsförmåga = (CheckBox) findViewById(R.id.Kommunikationsförmåga);
@@ -55,17 +55,35 @@ public class SkillsActivity extends AppCompatActivity {
                 OUTPUT.append("First skill:").append(Ledarskapsförmåga.isChecked());
 
                 //Toast.makeText(SkillsActivity.this, OUTPUT.toString(),Toast.LENGTH_LONG).show();
-                if(Ansvarstagande.isChecked() && Initiativtagare.isChecked()){
-                   Toast.makeText(SkillsActivity.this,"Cs:Go och LoL",Toast.LENGTH_LONG).show();
+              //  Toast.makeText(SkillsActivity.this,"Du kan spela vad som",Toast.LENGTH_LONG).show();
+                if( Tålamod.isChecked()== false && Kommunikationsförmåga.isChecked()== false && Konfliktlösningsförmåga.isChecked() == false && Ansvarstagande.isChecked() == false && Initiativtagare.isChecked() == false && Prioriteringsförmåga.isChecked()== false){
+                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar LoL/Cs/WoW",Toast.LENGTH_LONG).show();
+                }
+                if(Ansvarstagande.isChecked() == false && Initiativtagare.isChecked() == false){
+                }
+                else{
+                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs/LoL",Toast.LENGTH_LONG).show();
                 }
 
-                if(Tålamod.isChecked() && Konfliktlösningsförmåga.isChecked() || Tålamod.isChecked() || Konfliktlösningsförmåga.isChecked()){
-                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW eller LoL",Toast.LENGTH_LONG).show();
+                if(Konfliktlösningsförmåga.isChecked() == false && Prioriteringsförmåga.isChecked() == false){
+
+                }else{
+                    Toast.makeText(SkillsActivity.this," Du letar efter någon som spelar WoW / LoL",Toast.LENGTH_LONG).show();
+                }
+                if(Kommunikationsförmåga.isChecked() == false && Problemlösning.isChecked() == false){
+
+                }else{
+                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som lirar WoW eller CSgo",Toast.LENGTH_LONG).show();
+                }
+                if(Tålamod.isChecked() == false){
+
+                }else{
+                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW",Toast.LENGTH_LONG).show();
                 }
 
-                if (Kommunikationsförmåga.isChecked() && Tålamod.isChecked()){
-                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs:go eller WoW ",Toast.LENGTH_LONG).show();
-                }
+
+
+
 
 
             }
@@ -74,7 +92,7 @@ public class SkillsActivity extends AppCompatActivity {
         Konfliktlösningsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                if (isChecked && numberOfCheckboxesChecked >= 12) {
                     Konfliktlösningsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -94,7 +112,7 @@ public class SkillsActivity extends AppCompatActivity {
         Kommunikationsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                if (isChecked && numberOfCheckboxesChecked >= 12) {
                     Kommunikationsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -114,7 +132,7 @@ public class SkillsActivity extends AppCompatActivity {
         Ansvarstagande.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                if (isChecked && numberOfCheckboxesChecked >= 12) {
                     Ansvarstagande.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -134,7 +152,7 @@ public class SkillsActivity extends AppCompatActivity {
         Initiativtagare.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                if (isChecked && numberOfCheckboxesChecked >= 12) {
                     Initiativtagare.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -154,7 +172,7 @@ public class SkillsActivity extends AppCompatActivity {
         Sammarbetsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                if (isChecked && numberOfCheckboxesChecked >= 12) {
                     Sammarbetsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -174,7 +192,7 @@ public class SkillsActivity extends AppCompatActivity {
         Prioriteringsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                if (isChecked && numberOfCheckboxesChecked >= 12) {
                     Prioriteringsförmåga.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -194,7 +212,7 @@ public class SkillsActivity extends AppCompatActivity {
         Tålamod.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                if (isChecked && numberOfCheckboxesChecked >= 12) {
                     Tålamod.setChecked(false);
                 } else {
                     // the checkbox either got unchecked
@@ -227,4 +245,4 @@ public class SkillsActivity extends AppCompatActivity {
 
 
 
-    }
+}
