@@ -3,7 +3,7 @@ package com.example.andreas.game;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.ToggleButton;
+
 
 import static com.example.andreas.game.GamesActivity.toggleFyra;
 import static com.example.andreas.game.GamesActivity.toggleTre;
@@ -21,6 +21,7 @@ public class GResActivity extends AppCompatActivity {
 
         textView9 = (TextView) findViewById(R.id.textView9);
         textView9.setText(GamesActivity.Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra));
+        textView9.setTextSize(25);
 
 
     }

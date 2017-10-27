@@ -184,7 +184,6 @@ public class GamesActivity extends AppCompatActivity {
         }
 
 
-
         return result;
     }
 }

@@ -70,7 +70,7 @@ public class SkillsActivity extends AppCompatActivity {
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs:go eller WoW ",Toast.LENGTH_LONG).show();
                 }
 
-/*                if(Ansvarstagande.isChecked() && Konfliktlösningsförmåga.isChecked() || Initiativ.isChecked() || Konfliktlösningsförmåga.isChecked()){
+/*              if(Ansvarstagande.isChecked() && Konfliktlösningsförmåga.isChecked() || Initiativ.isChecked() || Konfliktlösningsförmåga.isChecked()){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar CS eller LoL",Toast.LENGTH_LONG).show();
                 }
 */
