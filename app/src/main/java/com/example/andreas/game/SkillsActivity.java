@@ -55,6 +55,7 @@ public class SkillsActivity extends AppCompatActivity {
                 OUTPUT.append("First skill:").append(Ledarskapsförmåga.isChecked());
 
                 //Toast.makeText(SkillsActivity.this, OUTPUT.toString(),Toast.LENGTH_LONG).show();
+
               //  Toast.makeText(SkillsActivity.this,"Du kan spela vad som",Toast.LENGTH_LONG).show();
                 if( Tålamod.isChecked()== false && Kommunikationsförmåga.isChecked()== false && Konfliktlösningsförmåga.isChecked() == false && Ansvarstagande.isChecked() == false && Initiativtagare.isChecked() == false && Prioriteringsförmåga.isChecked()== false){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar LoL/Cs/WoW",Toast.LENGTH_LONG).show();
@@ -74,20 +75,13 @@ public class SkillsActivity extends AppCompatActivity {
 
                 }else{
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som lirar WoW eller CSgo",Toast.LENGTH_LONG).show();
+
+                if(Tålamod.isChecked()==false && Konfliktlösningsförmåga.isChecked()==false && Tålamod.isChecked()==false){
+                   // Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW eller LoL",Toast.LENGTH_LONG).show();
+
+                }else {
+                    Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar WoW", Toast.LENGTH_LONG).show();
                 }
-                if(Tålamod.isChecked() == false){
-
-                }else{
-                    Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW",Toast.LENGTH_LONG).show();
-                }
-
-
-
-
-
-
-            }
-
         });
         Konfliktlösningsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

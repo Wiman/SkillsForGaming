@@ -1,5 +1,6 @@
 package com.example.andreas.game;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +20,7 @@ public class GamesActivity extends AppCompatActivity {
     TextView gameTextOne, textView8;
     ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4;
 
+    public static String toggleEtt, toggleTva, toggleTre, toggleFyra;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +32,9 @@ public class GamesActivity extends AppCompatActivity {
         playTimeTxt = (EditText) findViewById(R.id.playTimeTxt);
         button7 = (Button) findViewById(R.id.button7);
         gameTextOne = (TextView) findViewById(R.id.gameTextOne);
-        //textView8 = (TextView) findViewById(R.id.textView8);
+
+        textView8 = (TextView) findViewById(R.id.gameView8);
+
         fragaEttBtn = (ToggleButton) findViewById(R.id.fragaEttBtn);
         toggleButton2 = (ToggleButton) findViewById(R.id.toggleButton2);
         toggleButton3 = (ToggleButton) findViewById(R.id.toggleButton3);
@@ -52,18 +56,18 @@ public class GamesActivity extends AppCompatActivity {
                         String playTime = playTimeTxt.getText().toString();
 
                         Log.i("EditText", fragaEttBtn.getText().toString());
-                        String toggleEtt = fragaEttBtn.getText().toString();
-                        String toggleTva = toggleButton2.getText().toString();
-                        String toggleTre = toggleButton3.getText().toString();
-                        String toggleFyra = toggleButton4.getText().toString();
+                         toggleEtt = fragaEttBtn.getText().toString();
+                         toggleTva = toggleButton2.getText().toString();
+                         toggleTre = toggleButton3.getText().toString();
+                         toggleFyra = toggleButton4.getText().toString();
 
 
                         gameTextOne.setText(SpelInfo(game, rank, playTime, toggleEtt)); //test it
                         gameTextOne.setVisibility(View.VISIBLE);
 
-                        textView8.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra));
-                        textView8.setVisibility(View.VISIBLE);
-
+                        //textView8.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra));
+                        //textView8.setVisibility(View.VISIBLE);
+                        startActivity(new Intent(getApplicationContext(),GResActivity.class));
                     }
                 }
         );
@@ -153,7 +157,7 @@ public class GamesActivity extends AppCompatActivity {
         return butt;
     }
 
-    public String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra) {
+    public static String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra) {
         String result="";
 
         if (toggleEtt.equals("Ja")){
@@ -180,7 +184,6 @@ public class GamesActivity extends AppCompatActivity {
         else {
             result = result + "\nSpelaren är solo spelare";
         }
-
 
 
 
