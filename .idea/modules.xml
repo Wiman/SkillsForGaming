@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SkillsForGaming.iml" filepath="$PROJECT_DIR$/SkillsForGaming.iml" />
+      <module fileurl="file://C:\Users\Andreas\Documents\GitHub\SkillsForGaming\SkillsForGaming.iml" filepath="C:\Users\Andreas\Documents\GitHub\SkillsForGaming\SkillsForGaming.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Andreas\Documents\GitHub\SkillsForGaming\app\app.iml" filepath="C:\Users\Andreas\Documents\GitHub\SkillsForGaming\app\app.iml" />
     </modules>
   </component>
 </project>
