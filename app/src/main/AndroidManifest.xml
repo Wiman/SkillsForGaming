@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".GamesActivity" />
         <activity android:name=".SkillsActivity" />
-        <activity android:name=".GResActivity"></activity>
+        <activity android:name=".GResActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>

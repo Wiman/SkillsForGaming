@@ -33,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        final Button buttonBout = (Button) findViewById(R.id.button);
+        buttonBout.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(),AboutActivity.class));
+            }
+
+        });
     }
 
     }
