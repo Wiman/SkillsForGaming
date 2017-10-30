@@ -232,6 +232,126 @@ public class SkillsActivity extends AppCompatActivity {
             }
         });
 
+        Flexibel.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                    Flexibel.setChecked(false);
+                } else {
+                    // the checkbox either got unchecked
+                    // or there are less than 2 other checkboxes checked
+                    // change your counter accordingly
+                    if (isChecked) {
+                        numberOfCheckboxesChecked++;
+                    } else {
+                        numberOfCheckboxesChecked--;
+                    }
+
+                    // now everything is fine and you can do whatever
+                    // checking the checkbox should do here
+                }
+            }
+        });
+        Problemlösning.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                    Problemlösning.setChecked(false);
+                } else {
+                    // the checkbox either got unchecked
+                    // or there are less than 2 other checkboxes checked
+                    // change your counter accordingly
+                    if (isChecked) {
+                        numberOfCheckboxesChecked++;
+                    } else {
+                        numberOfCheckboxesChecked--;
+                    }
+
+                    // now everything is fine and you can do whatever
+                    // checking the checkbox should do here
+                }
+            }
+        });
+        Fokus.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                    Fokus.setChecked(false);
+                } else {
+                    // the checkbox either got unchecked
+                    // or there are less than 2 other checkboxes checked
+                    // change your counter accordingly
+                    if (isChecked) {
+                        numberOfCheckboxesChecked++;
+                    } else {
+                        numberOfCheckboxesChecked--;
+                    }
+
+                    // now everything is fine and you can do whatever
+                    // checking the checkbox should do here
+                }
+            }
+        });
+        Prioriteringsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                    Prioriteringsförmåga.setChecked(false);
+                } else {
+                    // the checkbox either got unchecked
+                    // or there are less than 2 other checkboxes checked
+                    // change your counter accordingly
+                    if (isChecked) {
+                        numberOfCheckboxesChecked++;
+                    } else {
+                        numberOfCheckboxesChecked--;
+                    }
+
+                    // now everything is fine and you can do whatever
+                    // checking the checkbox should do here
+                }
+            }
+        });
+        Besluttagningförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                    Besluttagningförmåga.setChecked(false);
+                } else {
+                    // the checkbox either got unchecked
+                    // or there are less than 2 other checkboxes checked
+                    // change your counter accordingly
+                    if (isChecked) {
+                        numberOfCheckboxesChecked++;
+                    } else {
+                        numberOfCheckboxesChecked--;
+                    }
+
+                    // now everything is fine and you can do whatever
+                    // checking the checkbox should do here
+                }
+            }
+        });
+        Ledarskapsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked && numberOfCheckboxesChecked >= 3) {
+                    Ledarskapsförmåga.setChecked(false);
+                } else {
+                    // the checkbox either got unchecked
+                    // or there are less than 2 other checkboxes checked
+                    // change your counter accordingly
+                    if (isChecked) {
+                        numberOfCheckboxesChecked++;
+                    } else {
+                        numberOfCheckboxesChecked--;
+                    }
+
+                    // now everything is fine and you can do whatever
+                    // checking the checkbox should do here
+                }
+            }
+        });
        /* final Button button = (Button) findViewById(R.id.Skill1);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
