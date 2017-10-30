@@ -60,11 +60,10 @@ public class GamesActivity extends AppCompatActivity {
                          toggleFyra = toggleButton4.getText().toString();
 
 
-                        gameTextOne.setText(SpelInfo(game, rank, playTime, toggleEtt)); //test it
-                        gameTextOne.setVisibility(View.VISIBLE);
+                      //  gameTextOne.setText(SpelInfo(game, rank, playTime, toggleEtt)); //test it
+                        //gameTextOne.setVisibility(View.VISIBLE);
 
-                        //textView8.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra));
-                        //textView8.setVisibility(View.VISIBLE);
+
                         startActivity(new Intent(getApplicationContext(),GResActivity.class));
                     }
                 }
