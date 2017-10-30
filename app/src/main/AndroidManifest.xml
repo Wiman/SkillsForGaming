@@ -19,7 +19,8 @@
         <activity android:name=".GamesActivity" />
         <activity android:name=".SkillsActivity" />
         <activity android:name=".GResActivity" />
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".SResActivity"></activity>
     </application>
 
 </manifest>

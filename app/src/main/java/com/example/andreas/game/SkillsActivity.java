@@ -86,7 +86,7 @@ public class SkillsActivity extends AppCompatActivity {
 /*              if(Ansvarstagande.isChecked() && Konfliktlösningsförmåga.isChecked() || Initiativ.isChecked() || Konfliktlösningsförmåga.isChecked()){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar CS eller LoL",Toast.LENGTH_LONG).show();
                 }
-*/
+*/               startActivity(new Intent(getApplicationContext(),SResActivity.class));
 
             }
 
