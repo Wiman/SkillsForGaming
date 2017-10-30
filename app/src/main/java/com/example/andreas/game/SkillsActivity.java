@@ -33,6 +33,8 @@ public class SkillsActivity extends AppCompatActivity {
         final CheckBox Initiativtagare = (CheckBox) findViewById(R.id.Initiativtagare);
         final CheckBox Ansvarstagande = (CheckBox) findViewById(R.id.Ansvarstagande);
         final CheckBox Ledarskapsförmåga = (CheckBox) findViewById(R.id.Ledarskapsförmåga);
+        String[] anArray;
+
 
 
 
@@ -58,17 +60,16 @@ public class SkillsActivity extends AppCompatActivity {
                 if( !Tålamod.isChecked() && !Kommunikationsförmåga.isChecked() && !Konfliktlösningsförmåga.isChecked() && !Ansvarstagande.isChecked() && !Initiativtagare.isChecked() && !Prioriteringsförmåga.isChecked()){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar LoL/Cs/WoW",Toast.LENGTH_LONG).show();
                 }
-                if(Ansvarstagande.isChecked() && Initiativtagare.isChecked()){
+                if((!Tålamod.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Kommunikationsförmåga.isChecked() &  !Problemlösning.isChecked() & !Prioriteringsförmåga.isChecked()) & (Ansvarstagande.isChecked() | Initiativtagare.isChecked())){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs/LoL",Toast.LENGTH_LONG).show();
                 }
-
-                if(Konfliktlösningsförmåga.isChecked() && Prioriteringsförmåga.isChecked()){
+                if((!Tålamod.isChecked() & !Problemlösning.isChecked() & !Kommunikationsförmåga.isChecked() & !Ansvarstagande.isChecked() & !Initiativtagare.isChecked() & !Ansvarstagande.isChecked()) & Konfliktlösningsförmåga.isChecked() | (Prioriteringsförmåga.isChecked())){
                     Toast.makeText(SkillsActivity.this," Du letar efter någon som spelar WoW / LoL",Toast.LENGTH_LONG).show();
                 }
-                if(Kommunikationsförmåga.isChecked() && Problemlösning.isChecked()){
+                if(( !Tålamod.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Ansvarstagande.isChecked() & !Initiativtagare.isChecked()) & (Kommunikationsförmåga.isChecked() | Problemlösning.isChecked())){
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som lirar WoW eller CS", Toast.LENGTH_LONG).show();
                 }
-                if(Tålamod.isChecked()){
+                if((!Ansvarstagande.isChecked() & !Initiativtagare.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Kommunikationsförmåga.isChecked() & !Problemlösning.isChecked()) & Tålamod.isChecked()){
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar WoW", Toast.LENGTH_LONG).show();
                 }
 
@@ -78,6 +79,8 @@ public class SkillsActivity extends AppCompatActivity {
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar CS eller LoL",Toast.LENGTH_LONG).show();
                 }
 */               startActivity(new Intent(getApplicationContext(),SResActivity.class));
+
+
 
             }
 
