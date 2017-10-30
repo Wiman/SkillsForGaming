@@ -55,29 +55,20 @@ public class SkillsActivity extends AppCompatActivity {
                 OUTPUT.append("First skill:").append(Ledarskapsförmåga.isChecked());
 
                 //Toast.makeText(SkillsActivity.this, OUTPUT.toString(),Toast.LENGTH_LONG).show();
-                if( Tålamod.isChecked()== false && Kommunikationsförmåga.isChecked()== false && Konfliktlösningsförmåga.isChecked() == false && Ansvarstagande.isChecked() == false && Initiativtagare.isChecked() == false && Prioriteringsförmåga.isChecked()== false){
+                if( !Tålamod.isChecked() && !Kommunikationsförmåga.isChecked() && !Konfliktlösningsförmåga.isChecked() && !Ansvarstagande.isChecked() && !Initiativtagare.isChecked() && !Prioriteringsförmåga.isChecked()){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar LoL/Cs/WoW",Toast.LENGTH_LONG).show();
                 }
-                if(Ansvarstagande.isChecked() == false && Initiativtagare.isChecked() == false){
-                }
-                else{
+                if(Ansvarstagande.isChecked() && Initiativtagare.isChecked()){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs/LoL",Toast.LENGTH_LONG).show();
                 }
 
-                if(Konfliktlösningsförmåga.isChecked() == false && Prioriteringsförmåga.isChecked() == false){
-
-                }else{
+                if(Konfliktlösningsförmåga.isChecked() && Prioriteringsförmåga.isChecked()){
                     Toast.makeText(SkillsActivity.this," Du letar efter någon som spelar WoW / LoL",Toast.LENGTH_LONG).show();
                 }
-                if(Kommunikationsförmåga.isChecked() == false && Problemlösning.isChecked() == false){
-
-                }else {
-                    Toast.makeText(SkillsActivity.this, "Du letar efter någon som lirar WoW eller CSgo", Toast.LENGTH_LONG).show();
+                if(Kommunikationsförmåga.isChecked() && Problemlösning.isChecked()){
+                    Toast.makeText(SkillsActivity.this, "Du letar efter någon som lirar WoW eller CS", Toast.LENGTH_LONG).show();
                 }
-                if(Tålamod.isChecked()==false && Konfliktlösningsförmåga.isChecked()==false && Tålamod.isChecked()==false){
-                    // Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar WoW eller LoL",Toast.LENGTH_LONG).show();
-                }
-                else {
+                if(Tålamod.isChecked()){
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar WoW", Toast.LENGTH_LONG).show();
                 }
 
