@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="292dp"
             android:layout_margin="25dp"
-            android:text="What is upp peeepz !?!?"
+            android:text="Hello Magnus Curling, It's me! Robin Speaking"
             android:textColor="@android:color/background_dark"
             android:textSize="14sp"
             tools:layout_editor_absoluteX="100dp"
