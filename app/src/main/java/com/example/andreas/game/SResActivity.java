@@ -51,17 +51,17 @@ public class SResActivity extends AppCompatActivity {
 
                case "LoL/WoW":
                    imageView.setImageResource(R.drawable.warcraftlogo);
-                   textView11.setText ("Du vill ha en World of Warcraft spelare!");
+                   textView11.setText ("Du vill ha en League of Legends och World of Warcraft spelare!");
                    break;
 
                case "Cs/LoL":
                    imageView.setImageResource(R.drawable.counterstrikelogo);
-                   textView11.setText ("Du vill ha en Counterstrike spelare!");
+                   textView11.setText ("Du vill ha en Counterstrike och League of Legends Spelare!");
                    break;
 
                case "Cs/WoW":
                    imageView.setImageResource(R.drawable.leagueicon);
-                   textView11.setText ("Du vill ha en League of Legends spelare!");
+                   textView11.setText ("Du vill ha en Counterstrike och World of Warcraft spelare!");
                    break;
 
                case "Eh":
