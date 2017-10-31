@@ -13,10 +13,8 @@ public class AboutActivity extends AppCompatActivity {
 
         final TextView aboutText = (TextView) findViewById(R.id.textView7);
 
-        aboutText.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet ante a auctor egestas. Ut tempus lacinia libero ut egestas. " +
-                "Duis hendrerit ut nisi sed congue. Donec hendrerit mauris et euismod tristique. Morbi sed malesuada elit." + "\n" +
-                "Curabitur posuere ante sed odio posuere tincidunt. Quisque consequat placerat cursus. Fusce rhoncus eros hendrerit, sollicitudin tellus vel, tempus ante." +
-                "Nam felis diam, ornare eget odio eu, vehicula auctor leo. Nunc cursus tortor nec fringilla sodales." +
-                "Phasellus auctor tincidunt tortor at blandit. Etiam convallis volutpat felis, auctor porttitor odio faucibus at. Praesent ut risus eu orci scelerisque dapibus.");
+        aboutText.setText("\n \nHello world! \n\nWe are doing this prototype to demonstrate what skills gamers aquire while playing videogames." +
+                "\u000BVideogames today require the players to engage in strategical thinking, teamworking and individual growth. " +
+                "\u000BAnd practice makes perfect. Gamers spend an incredible amout of time unknowingly developing these skills.");
     }
 }

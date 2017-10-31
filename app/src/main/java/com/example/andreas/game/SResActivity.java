@@ -22,31 +22,30 @@ public class SResActivity extends AppCompatActivity {
         textView11 = (TextView) findViewById(R.id.textView11);
         imageView = (ImageView) findViewById(R.id.imageView);
         Bildbild(textEtt);
-        //textView11.setText(textEtt);
-        //imageView.setImageResource(R.drawable.warcraftlogo);
+
     }
 
     public void Bildbild (String textEtt){
         switch (textEtt){
             case "WoW":
-                //död kod
+
                  imageView.setImageResource(R.drawable.warcraftlogo);
-                // textView11.setText ("Du vill ha en riktig WoW Gamer!");
+                 textView11.setText ("Du vill ha en World of Warcraft spelare!");
                 break;
             case "CS":
-                //död kod
+
                  imageView.setImageResource(R.drawable.counterstrikelogo);
-                // textView11.setText ("Du vill ha en riktig CS Gamer!");
+                 textView11.setText ("Du vill ha en Counterstrike spelare!");
                 break;
             case "LoL":
-                //död kod
+
                  imageView.setImageResource(R.drawable.leagueicon);
-                // textView11.setText ("Du vill ha en riktig LoL Gamer!");
+                 textView11.setText ("Du vill ha en League of Legends spelare!");
                 break;
             case "Eh":
-                //död kod
+
                 // imageView.setImageResource(R.drawable.);
-                 textView11.setText ("Du vill ha en riktig Eh ..? Gamer!");
+                 textView11.setText ("Du vill ha en Eh ..? Gamer!");
                 break;
             default:
                 textView11.setText("Du har inte valt något bra spel!!");
