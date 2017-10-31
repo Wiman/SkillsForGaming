@@ -74,18 +74,18 @@ public class SkillsActivity extends AppCompatActivity {
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som lirar WoW/CS", Toast.LENGTH_LONG).show();
                     textFyra = "Du letar efter någon som spelar Cs/WoW";
                 }
-                if((!Ansvarstagande.isChecked() & !Initiativtagare.isChecked() ) & (Tålamod.isChecked()) | (Konfliktlösningsförmåga.isChecked() & Problemlösning.isChecked()) | (Kommunikationsförmåga.isChecked() & Konfliktlösningsförmåga.isChecked()) ){
+                if((!Ansvarstagande.isChecked() & !Initiativtagare.isChecked() ) & (Tålamod.isChecked()) | (Konfliktlösningsförmåga.isChecked() & Problemlösning.isChecked()) | (Kommunikationsförmåga.isChecked() & Konfliktlösningsförmåga.isChecked() | (Kommunikationsförmåga.isChecked() & Prioriteringsförmåga.isChecked()) | (Prioriteringsförmåga.isChecked() & Problemlösning.isChecked())) ){
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar WoW", Toast.LENGTH_LONG).show();
                     textFem = "Du letar efter någon som spelar WoW";
                 }
 
-                if((!Initiativtagare.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Tålamod.isChecked()) & (Problemlösning.isChecked() | Ansvarstagande.isChecked())  | (Initiativtagare.isChecked() & Kommunikationsförmåga.isChecked())){
+                if((!Initiativtagare.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Tålamod.isChecked()) & (Problemlösning.isChecked() | Ansvarstagande.isChecked())  | (Initiativtagare.isChecked() & Kommunikationsförmåga.isChecked()) | (Ansvarstagande.isChecked() & Kommunikationsförmåga.isChecked()) | (Initiativtagare.isChecked() & Problemlösning.isChecked())){
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar CS" +
                             "", Toast.LENGTH_LONG).show();
                     textFem = "Du letar efter någon som spelar CS";
                 }
 
-                if((!Tålamod.isChecked() & !Kommunikationsförmåga.isChecked() & !Problemlösning.isChecked() ) & ( Ansvarstagande.isChecked() & Prioriteringsförmåga.isChecked()) | (Konfliktlösningsförmåga.isChecked() & Ansvarstagande.isChecked())){
+                if((!Tålamod.isChecked() & !Kommunikationsförmåga.isChecked() & !Problemlösning.isChecked() ) & ( Ansvarstagande.isChecked() & Prioriteringsförmåga.isChecked()) | (Konfliktlösningsförmåga.isChecked() & Ansvarstagande.isChecked()) | (Konfliktlösningsförmåga.isChecked() & Initiativtagare.isChecked())){
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar LoL" +
                             "", Toast.LENGTH_LONG).show();
                     textFem = "Du letar efter någon som spelar LoL";
