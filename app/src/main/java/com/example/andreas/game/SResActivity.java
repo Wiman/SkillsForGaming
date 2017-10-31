@@ -26,46 +26,56 @@ public class SResActivity extends AppCompatActivity {
     }
 
     public void Bildbild (String textEtt){
-        switch (textEtt){
+       if(textEtt == null){
+           imageView.setImageResource(R.drawable.questionmarkicon);
+           textView11.setText("Du har inte valt något bra spel!!");
+       }
+       else{
 
-            case "WoW":
-                 imageView.setImageResource(R.drawable.warcraftlogo);
-                 textView11.setText ("Du vill ha en World of Warcraft spelare!");
-                break;
+           switch (textEtt){
 
-            case "Cs":
-                 imageView.setImageResource(R.drawable.counterstrikelogo);
-                 textView11.setText ("Du vill ha en Counterstrike spelare!");
-                break;
+               case "WoW":
+                   imageView.setImageResource(R.drawable.warcraftlogo);
+                   textView11.setText ("Du vill ha en World of Warcraft spelare!");
+                   break;
 
-            case "LoL":
-                 imageView.setImageResource(R.drawable.leagueicon);
-                 textView11.setText ("Du vill ha en League of Legends spelare!");
-                break;
+               case "Cs":
+                   imageView.setImageResource(R.drawable.counterstrikelogo);
+                   textView11.setText ("Du vill ha en Counterstrike spelare!");
+                   break;
 
-            case "LoL/WoW":
-                imageView.setImageResource(R.drawable.warcraftlogo);
-                textView11.setText ("Du vill ha en World of Warcraft spelare!");
-                break;
+               case "LoL":
+                   imageView.setImageResource(R.drawable.leagueicon);
+                   textView11.setText ("Du vill ha en League of Legends spelare!");
+                   break;
 
-            case "Cs/LoL":
-                imageView.setImageResource(R.drawable.counterstrikelogo);
-                textView11.setText ("Du vill ha en Counterstrike spelare!");
-                break;
+               case "LoL/WoW":
+                   imageView.setImageResource(R.drawable.warcraftlogo);
+                   textView11.setText ("Du vill ha en World of Warcraft spelare!");
+                   break;
 
-            case "Cs/WoW":
-                imageView.setImageResource(R.drawable.leagueicon);
-                textView11.setText ("Du vill ha en League of Legends spelare!");
-                break;
+               case "Cs/LoL":
+                   imageView.setImageResource(R.drawable.counterstrikelogo);
+                   textView11.setText ("Du vill ha en Counterstrike spelare!");
+                   break;
 
-            case "Eh":
-                 imageView.setImageResource(R.drawable.questionmarkicon);
-                 textView11.setText ("Du vill ha en Eh ..? Gamer!");
-                break;
+               case "Cs/WoW":
+                   imageView.setImageResource(R.drawable.leagueicon);
+                   textView11.setText ("Du vill ha en League of Legends spelare!");
+                   break;
 
-            default:
-                textView11.setText("Du har inte valt något bra spel!!");
-                break;
-        }
+               case "Eh":
+                   imageView.setImageResource(R.drawable.questionmarkicon);
+                   textView11.setText ("Du vill ha en Eh ..? Gamer!");
+                   break;
+
+               default:
+                   textView11.setText("Du har inte valt något bra spel!!");
+                   break;
+           }
+
+       }
+
+
     }
 }
