@@ -4,10 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import static com.example.andreas.game.SkillsActivity.textFyra;
-import static com.example.andreas.game.SkillsActivity.textTva;
-import static com.example.andreas.game.SkillsActivity.textTre;
-import static com.example.andreas.game.SkillsActivity.textFem;
+
 import static com.example.andreas.game.SkillsActivity.textEtt;
 
 
@@ -21,6 +18,6 @@ public class SResActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sres);
 
         textView11 = (TextView) findViewById(R.id.textView11);
-        textView11.setText(textEtt + "\n" + textTva +"\n"+ textTre +"\n"+ textFyra +"\n"+ textFem);
+        textView11.setText(textEtt);
     }
 }
