@@ -18,9 +18,9 @@ public class GamesActivity extends AppCompatActivity {
     Button button7;
     EditText gameTxt, rankTxt, playTimeTxt;
     TextView gameTextOne, textView8;
-    ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4;
+    ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4, toggleButton5, toggleButton6;
 
-    public static String toggleEtt, toggleTva, toggleTre, toggleFyra;
+    public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,8 @@ public class GamesActivity extends AppCompatActivity {
         toggleButton2 = (ToggleButton) findViewById(R.id.toggleButton2);
         toggleButton3 = (ToggleButton) findViewById(R.id.toggleButton3);
         toggleButton4 = (ToggleButton) findViewById(R.id.toggleButton4);
+        toggleButton5 = (ToggleButton) findViewById(R.id.toggleButton5);
+        toggleButton6 = (ToggleButton) findViewById(R.id.toggleButton6);
 
 
 
@@ -59,6 +61,8 @@ public class GamesActivity extends AppCompatActivity {
                          toggleTva = toggleButton2.getText().toString();
                          toggleTre = toggleButton3.getText().toString();
                          toggleFyra = toggleButton4.getText().toString();
+                         toggleFem = toggleButton5.getText().toString();
+                         toggleSex = toggleButton6.getText().toString();
 
 
                       //  gameTextOne.setText(SpelInfo(game, rank, playTime, toggleEtt)); //test it
@@ -155,7 +159,7 @@ public class GamesActivity extends AppCompatActivity {
         return butt;
     }
 
-    public static String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra) {
+    public static String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra, String toggleFem, String toggleSex) {
         String result="";
 
         if (toggleEtt.equals("Ja")){
@@ -181,6 +185,18 @@ public class GamesActivity extends AppCompatActivity {
         }
         else {
             result = result + "\nSpelaren är solo spelare";
+        }
+        if (toggleFem.equals("Ja")){
+            result = result + "\nHar deltagit i en turnering";
+        }
+        else {
+            result = result + "\nHar inte spelat i en turnering";
+        }
+        if (toggleSex.equals("Ja")){
+            result = result + "\nSpelaren spelar flera roller";
+        }
+        else {
+            result = result + "\nSpelaren spelar en roll";
         }
 
 
