@@ -27,8 +27,8 @@ public class SResActivity extends AppCompatActivity {
 
     public void Bildbild (String textEtt){
         switch (textEtt){
-            case "WoW":
 
+            case "WoW":
                  imageView.setImageResource(R.drawable.warcraftlogo);
                  textView11.setText ("Du vill ha en World of Warcraft spelare!");
                 break;
@@ -42,8 +42,8 @@ public class SResActivity extends AppCompatActivity {
                  imageView.setImageResource(R.drawable.leagueicon);
                  textView11.setText ("Du vill ha en League of Legends spelare!");
                 break;
-            case "LoL/WoW":
 
+            case "LoL/WoW":
                 imageView.setImageResource(R.drawable.warcraftlogo);
                 textView11.setText ("Du vill ha en World of Warcraft spelare!");
                 break;
