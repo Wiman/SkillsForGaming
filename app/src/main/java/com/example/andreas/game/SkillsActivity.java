@@ -79,6 +79,20 @@ public class SkillsActivity extends AppCompatActivity {
                     textFem = "Du letar efter någon som spelar WoW";
                 }
 
+                if((!Initiativtagare.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Tålamod.isChecked()) & (Problemlösning.isChecked() | Ansvarstagande.isChecked())  | (Initiativtagare.isChecked() & Kommunikationsförmåga.isChecked())){
+                    Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar CS" +
+                            "", Toast.LENGTH_LONG).show();
+                    textFem = "Du letar efter någon som spelar CS";
+                }
+
+                if((!Tålamod.isChecked() & !Kommunikationsförmåga.isChecked() & !Problemlösning.isChecked() ) & ( Ansvarstagande.isChecked() & Prioriteringsförmåga.isChecked()) | (Konfliktlösningsförmåga.isChecked() & Ansvarstagande.isChecked())){
+                    Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar LoL" +
+                            "", Toast.LENGTH_LONG).show();
+                    textFem = "Du letar efter någon som spelar LoL";
+                }
+
+               
+
 
 
 /*              if(Ansvarstagande.isChecked() && Konfliktlösningsförmåga.isChecked() || Initiativ.isChecked() || Konfliktlösningsförmåga.isChecked()){
