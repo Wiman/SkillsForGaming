@@ -14,6 +14,7 @@ import android.widget.Toast;
 public class SkillsActivity extends AppCompatActivity {
     int numberOfCheckboxesChecked = 0;
     // string API = "http://afgamingserver.azurewebsites.net/api/gaming";
+    public static String textEtt, textTva, textTre,textFyra, textFem;
 
     @Override
     protected void onCreate(Bundle icicle) {
@@ -59,18 +60,23 @@ public class SkillsActivity extends AppCompatActivity {
                 //Toast.makeText(SkillsActivity.this, OUTPUT.toString(),Toast.LENGTH_LONG).show();
                 if( !Tålamod.isChecked() && !Kommunikationsförmåga.isChecked() && !Konfliktlösningsförmåga.isChecked() && !Ansvarstagande.isChecked() && !Initiativtagare.isChecked() && !Prioriteringsförmåga.isChecked()){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar LoL/Cs/WoW",Toast.LENGTH_LONG).show();
+                    textEtt = "Du letar efter någon som spelar LoL/Cs/WoW";
                 }
                 if((!Tålamod.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Kommunikationsförmåga.isChecked() &  !Problemlösning.isChecked() & !Prioriteringsförmåga.isChecked()) & (Ansvarstagande.isChecked() | Initiativtagare.isChecked())){
                     Toast.makeText(SkillsActivity.this,"Du letar efter någon som spelar Cs/LoL",Toast.LENGTH_LONG).show();
+                    textTva = "Du letar efter någon som spelar CS/LoL";
                 }
                 if((!Tålamod.isChecked() & !Problemlösning.isChecked() & !Kommunikationsförmåga.isChecked() & !Ansvarstagande.isChecked() & !Initiativtagare.isChecked() & !Ansvarstagande.isChecked()) & (Konfliktlösningsförmåga.isChecked() | (Prioriteringsförmåga.isChecked()))){
-                    Toast.makeText(SkillsActivity.this," Du letar efter någon som spelar WoW / LoL",Toast.LENGTH_LONG).show();
+                    Toast.makeText(SkillsActivity.this," Du letar efter någon som spelar WoW/LoL",Toast.LENGTH_LONG).show();
+                    textTre = "Du letar efter någon som spelar LoL/WoW";
                 }
                 if(( !Tålamod.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Ansvarstagande.isChecked() & !Initiativtagare.isChecked()) & (Kommunikationsförmåga.isChecked() | Problemlösning.isChecked())){
-                    Toast.makeText(SkillsActivity.this, "Du letar efter någon som lirar WoW eller CS", Toast.LENGTH_LONG).show();
+                    Toast.makeText(SkillsActivity.this, "Du letar efter någon som lirar WoW/CS", Toast.LENGTH_LONG).show();
+                    textFyra = "Du letar efter någon som spelar Cs/WoW";
                 }
                 if((!Ansvarstagande.isChecked() & !Initiativtagare.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Kommunikationsförmåga.isChecked() & !Problemlösning.isChecked()) & (Tålamod.isChecked())){
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar WoW", Toast.LENGTH_LONG).show();
+                    textFem = "Du letar efter någon som spelar WoW";
                 }
 
 

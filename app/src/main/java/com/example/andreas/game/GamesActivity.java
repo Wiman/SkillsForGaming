@@ -21,6 +21,7 @@ public class GamesActivity extends AppCompatActivity {
     ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4;
 
     public static String toggleEtt, toggleTva, toggleTre, toggleFyra;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
