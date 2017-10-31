@@ -74,7 +74,7 @@ public class SkillsActivity extends AppCompatActivity {
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som lirar WoW/CS", Toast.LENGTH_LONG).show();
                     textFyra = "Du letar efter någon som spelar Cs/WoW";
                 }
-                if((!Ansvarstagande.isChecked() & !Initiativtagare.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Kommunikationsförmåga.isChecked() & !Problemlösning.isChecked()) & (Tålamod.isChecked())){
+                if((!Ansvarstagande.isChecked() & !Initiativtagare.isChecked() ) & (Tålamod.isChecked()) | (Konfliktlösningsförmåga.isChecked() & Problemlösning.isChecked()) | (Kommunikationsförmåga.isChecked() & Konfliktlösningsförmåga.isChecked()) ){
                     Toast.makeText(SkillsActivity.this, "Du letar efter någon som spelar WoW", Toast.LENGTH_LONG).show();
                     textFem = "Du letar efter någon som spelar WoW";
                 }
@@ -91,7 +91,7 @@ public class SkillsActivity extends AppCompatActivity {
                     textFem = "Du letar efter någon som spelar LoL";
                 }
 
-               
+
 
 
 
