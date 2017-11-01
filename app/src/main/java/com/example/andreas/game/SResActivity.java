@@ -61,7 +61,7 @@ public class SResActivity extends AppCompatActivity {
                    break;
 
                case "Cs/WoW":
-                   imageView.setImageResource(R.drawable.leagueicon);
+                   imageView.setImageResource(R.drawable.wowcsicon);
                    textView11.setText ("Du vill ha en Counterstrike eller en World of Warcraft spelare!");
                    break;
 
@@ -71,6 +71,7 @@ public class SResActivity extends AppCompatActivity {
                    break;
 
                default:
+                   imageView.setImageResource(R.drawable.tecken);
                    textView11.setText("Du har inte valt något bra spel!!");
                    break;
            }
