@@ -357,7 +357,4 @@ public class SkillsActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
 }
