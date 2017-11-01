@@ -65,9 +65,6 @@ public class GamesActivity extends AppCompatActivity {
                          toggleSex = toggleButton6.getText().toString();
 
 
-                      //  gameTextOne.setText(SpelInfo(game, rank, playTime, toggleEtt)); //test it
-                        //gameTextOne.setVisibility(View.VISIBLE);
-
 
                         startActivity(new Intent(getApplicationContext(),GResActivity.class));
                     }
@@ -203,14 +200,3 @@ public class GamesActivity extends AppCompatActivity {
         return result;
     }
 }
-/*Blir du lätt stressad i spelet?
-Är du en ledare i spelet?
-Har du skapat ett lag?
-Spelar du oftast i lag eller ensam?
-Deltagit i någon turnering?
-Spelar du olika roller?
-Vilken roll spelar du mest?
-Tar du fram eller följer du strats?
-Vilket språk spelar ni på? (Kan vara egen sida, mera för att utvärdera en “hård kompetens”)
-Hur ofta måste du carria?
-*/
