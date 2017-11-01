@@ -20,7 +20,8 @@
         <activity android:name=".SkillsActivity" />
         <activity android:name=".GResActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".SResActivity"></activity>
+        <activity android:name=".SResActivity" />
+        <activity android:name=".AllSkillsActivity"></activity>
     </application>
 
 </manifest>
