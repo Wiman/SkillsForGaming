@@ -41,7 +41,7 @@ public class SResActivity extends AppCompatActivity {
 
                case "Cs":
                    imageView.setImageResource(R.drawable.counterstrikelogo);
-                   textView11.setText ("Du vill ha en Counterstrike spelare!");
+                   textView11.setText ("Du vill ha en Counter-Strike spelare!");
                    break;
 
                case "LoL":
@@ -56,13 +56,13 @@ public class SResActivity extends AppCompatActivity {
 
                case "Cs/LoL":
                    imageView.setImageResource(R.drawable.cslolicon);
-                   textView11.setText ("Du vill ha en Counterstrike eller en League of Legends Spelare!");
+                   textView11.setText ("Du vill ha en Counter-Strike eller en League of Legends Spelare!");
 
                    break;
 
                case "Cs/WoW":
                    imageView.setImageResource(R.drawable.wowcsicon);
-                   textView11.setText ("Du vill ha en Counterstrike eller en World of Warcraft spelare!");
+                   textView11.setText ("Du vill ha en Counter-Strike eller en World of Warcraft spelare!");
                    break;
 
                case "Eh":
