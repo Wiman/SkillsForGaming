@@ -23,7 +23,21 @@ public class AllSkillsActivity extends AppCompatActivity {
 
             case "WoW":
 
-                textView12.setText("Du vill ha en World of Warcraft spelare!");
+                textView12.setText
+                        ("Sammarbetsförmåga\n" +
+                        "Konfliktlösningsförmåga\n" +
+                        "Fokus\n" +
+
+                        "Ledarskapsförmågor\n" +
+                        "Kommunikativa förmågor\n" +
+                        "Beslutstagningsförmåga\n" +
+                        "Tålamod\n" +
+                        "Flexibel\n" +
+                        
+                        "Problemlösning\n" +
+                        "Teknik/It -intresse\n" +
+                        "Prioriteringsförmåga\n" +
+                        "Engelska");
                 break;
 
             case "Cs":
