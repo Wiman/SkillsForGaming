@@ -2,19 +2,39 @@ package com.example.andreas.game;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+
+
+import static com.example.andreas.game.SkillsActivity.textEtt;
 
 public class AllSkillsActivity extends AppCompatActivity {
 
-    TextView textview12;
+    TextView textView12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_skills);
 
-        textview12 = (TextView) findViewById(R.id.textView12);
+        textView12 = (TextView) findViewById(R.id.textView12);
 
-        textview12.setText("Placeholder, is gon depend on what button");
+        switch (textEtt) {
+
+            case "WoW":
+
+                textView12.setText("Du vill ha en World of Warcraft spelare!");
+                break;
+
+            case "Cs":
+
+                textView12.setText("Du vill ha en Counter-Strike spelare!");
+                break;
+
+            case "LoL":
+
+                textView12.setText("Du vill ha en League of Legends spelare!");
+                break;
+        }
     }
 }
