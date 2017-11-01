@@ -33,7 +33,7 @@ public class AllSkillsActivity extends AppCompatActivity {
                         "Beslutstagningsförmåga\n" +
                         "Tålamod\n" +
                         "Flexibel\n" +
-                        
+
                         "Problemlösning\n" +
                         "Teknik/It -intresse\n" +
                         "Prioriteringsförmåga\n" +
