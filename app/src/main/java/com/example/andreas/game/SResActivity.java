@@ -27,7 +27,7 @@ public class SResActivity extends AppCompatActivity {
 
     public void Bildbild (String textEtt){
        if(textEtt == null){
-           imageView.setImageResource(R.drawable.questionmarkicon);
+           imageView.setImageResource(R.drawable.tecken);
            textView11.setText("Du har inte valt något bra spel!!");
        }
        else{
@@ -65,7 +65,7 @@ public class SResActivity extends AppCompatActivity {
                    break;
 
                case "Eh":
-                   imageView.setImageResource(R.drawable.questionmarkicon);
+                   imageView.setImageResource(R.drawable.tecken);
                    textView11.setText ("Du vill ha en Eh ..? Gamer!");
                    break;
 
