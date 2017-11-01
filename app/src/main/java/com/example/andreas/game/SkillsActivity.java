@@ -357,19 +357,7 @@ public class SkillsActivity extends AppCompatActivity {
                 }
             }
         });
-       /* final Button button = (Button) findViewById(R.id.Skill1);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // your handler code here
-                // button.setText("Win");
-                startActivity(new Intent(getApplicationContext(),GamesActivity.class));
-            }
-        });
-     */
 
 
     }
-
-
-
 }
