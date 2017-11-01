@@ -58,36 +58,26 @@ public class SkillsActivity extends AppCompatActivity {
 
 
                 if( !Tålamod.isChecked() && !Kommunikationsförmåga.isChecked() && !Konfliktlösningsförmåga.isChecked() && !Ansvarstagande.isChecked() && !Initiativtagare.isChecked() && !Prioriteringsförmåga.isChecked()){
-
-                    textEtt = "Eh";//"Du letar efter någon som spelar LoL/Cs/WoW";
+                    textEtt = "Eh";
                 }
                 if((!Tålamod.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Kommunikationsförmåga.isChecked() &  !Problemlösning.isChecked() & !Prioriteringsförmåga.isChecked()) & (Ansvarstagande.isChecked() | Initiativtagare.isChecked())){
-
-                    textEtt = "Cs/LoL";//
+                    textEtt = "Cs/LoL";
                 }
                 if((!Tålamod.isChecked() & !Problemlösning.isChecked() & !Kommunikationsförmåga.isChecked() & !Ansvarstagande.isChecked() & !Initiativtagare.isChecked() & !Ansvarstagande.isChecked()) & (Konfliktlösningsförmåga.isChecked() | (Prioriteringsförmåga.isChecked()))){
-
-                    textEtt = "LoL/WoW"; //
+                    textEtt = "LoL/WoW";
                 }
                 if(( !Tålamod.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Ansvarstagande.isChecked() & !Initiativtagare.isChecked()) & (Kommunikationsförmåga.isChecked() | Problemlösning.isChecked())){
-
                     textEtt = "Cs/WoW";
                 }
                 if((!Ansvarstagande.isChecked() & !Initiativtagare.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Kommunikationsförmåga.isChecked() & !Problemlösning.isChecked()) & (Tålamod.isChecked())){
-
                     textEtt = "WoW";
                 }
-
                 if((!Initiativtagare.isChecked() & !Konfliktlösningsförmåga.isChecked() & !Prioriteringsförmåga.isChecked() & !Tålamod.isChecked()) & (Problemlösning.isChecked() | Ansvarstagande.isChecked())  | (Initiativtagare.isChecked() & Kommunikationsförmåga.isChecked())){
-
                     textEtt = "Cs";
                 }
-
                 if((!Tålamod.isChecked() & !Kommunikationsförmåga.isChecked() & !Problemlösning.isChecked() ) & ( Ansvarstagande.isChecked() & Prioriteringsförmåga.isChecked()) | (Konfliktlösningsförmåga.isChecked() & Ansvarstagande.isChecked())){
-
                     textEtt = "LoL";
                 }
-
                 startActivity(new Intent(getApplicationContext(),SResActivity.class));
 
 
