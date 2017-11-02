@@ -41,12 +41,36 @@ public class AllSkillsActivity extends AppCompatActivity {
 
             case "Cs":
 
-                textView12.setText("Du vill ha en Counter-Strike spelare!");
+                textView12.setText ("Sammarbetsförmåga\n" +
+                        "Ansvarstagande\n" +
+                        "Fokus\n" +
+
+                        "Ledarskapsförmågor?\n" +
+                        "Kommunikativa förmågor\n" +
+                        "Beslutstagningsförmåga\n" +
+                        "Initiativtagande\n" +
+                        "Flexibel\n" +
+
+                        "Problemlösning\n" +
+                        "Teknik/It -intresse\n" +
+
+                        "Engelska");
                 break;
 
             case "LoL":
 
-                textView12.setText("Du vill ha en League of Legends spelare!");
+                textView12.setText("Sammarbetsförmåga\n" +
+                        "Ansvarstagande\n" +
+                        "Konfliktlösningsförmåga\n" +
+                        "Fokus\n" +
+                        "Ledarskapsförmågor?\n" +
+                        "Beslutstagningsförmåga\n" +
+                        "Initiativtagande\n" +
+                        "Flexibel\n" +
+                        "Problemlösning\n" +
+                        "Prioriteringsfötmåga\n" +
+                        "Teknik/It -intresse\n" +
+                        "Engelska");
                 break;
         }
     }
