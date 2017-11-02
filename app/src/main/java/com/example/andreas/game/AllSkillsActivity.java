@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 
+
 import static com.example.andreas.game.SkillsActivity.textEtt;
 
 public class AllSkillsActivity extends AppCompatActivity {
@@ -23,7 +24,11 @@ public class AllSkillsActivity extends AppCompatActivity {
             case "WoW":
 
                 textView12.setText
-                        ("Sammarbetsförmåga\n" +
+                        (
+                        "Dom här skillsen får personen av att spela WoW\n" +
+                        "\n" +
+                        "RelationsKompetens</b>\n" +
+                        "Sammarbetsförmåga\n" +
                         "Konfliktlösningsförmåga\n" +
                         "Fokus\n" +
 
@@ -41,7 +46,10 @@ public class AllSkillsActivity extends AppCompatActivity {
 
             case "Cs":
 
-                textView12.setText ("Sammarbetsförmåga\n" +
+                textView12.setText (
+                        "Dom här skillsen får personen av att spela CS\n" +
+                        "\n" +
+                        "Sammarbetsförmåga\n" +
                         "Ansvarstagande\n" +
                         "Fokus\n" +
 
@@ -59,7 +67,10 @@ public class AllSkillsActivity extends AppCompatActivity {
 
             case "LoL":
 
-                textView12.setText("Sammarbetsförmåga\n" +
+                textView12.setText(
+                        "Dom här skillsen får personen av att spela LoL\n" +
+                        "\n" +
+                        "Sammarbetsförmåga\n" +
                         "Ansvarstagande\n" +
                         "Konfliktlösningsförmåga\n" +
                         "Fokus\n" +
