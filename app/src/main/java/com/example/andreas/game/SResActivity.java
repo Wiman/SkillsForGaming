@@ -11,11 +11,11 @@ import android.widget.TextView;
 
 import static com.example.andreas.game.SkillsActivity.textEtt;
 
-
 public class SResActivity extends AppCompatActivity {
 
     TextView textView11;
     ImageView imageView;
+    public static String enkelt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,7 @@ public class SResActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // your handler code here
                 // button.setText("Win");
+                enkelt = "Cs";
                 startActivity(new Intent(getApplicationContext(),AllSkillsActivity.class));
             }
         });
@@ -50,6 +51,7 @@ public class SResActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // your handler code here
                 // button.setText("Win");
+                enkelt = "LoL";
                 startActivity(new Intent(getApplicationContext(),AllSkillsActivity.class));
             }
         });
@@ -58,6 +60,7 @@ public class SResActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // your handler code here
                 // button.setText("Win");
+                enkelt = "WoW";
                 startActivity(new Intent(getApplicationContext(),AllSkillsActivity.class));
             }
         });

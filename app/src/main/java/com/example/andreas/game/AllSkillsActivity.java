@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 
 
-import static com.example.andreas.game.SkillsActivity.textEtt;
+import static com.example.andreas.game.SResActivity.enkelt;
 
 public class AllSkillsActivity extends AppCompatActivity {
 
@@ -19,7 +19,7 @@ public class AllSkillsActivity extends AppCompatActivity {
 
         textView12 = (TextView) findViewById(R.id.textView12);
 
-        switch (textEtt) {
+        switch (enkelt) {
 
             case "WoW":
 
