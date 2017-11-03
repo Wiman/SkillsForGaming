@@ -28,13 +28,13 @@ public class GamesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_games);
 
 
-        gameTxt = (EditText) findViewById(R.id.gameTxt);
-        rankTxt = (EditText) findViewById(R.id.rankTxt);
-        playTimeTxt = (EditText) findViewById(R.id.playTimeTxt);
-        button7 = (Button) findViewById(R.id.button7);
-        gameTextOne = (TextView) findViewById(R.id.gameTextOne);
-        textView8 = (TextView) findViewById(R.id.gameView8);
-        fragaEttBtn = (ToggleButton) findViewById(R.id.fragaEttBtn);
+        gameTxt       = (EditText) findViewById(R.id.gameTxt);
+        rankTxt       = (EditText) findViewById(R.id.rankTxt);
+        playTimeTxt   = (EditText) findViewById(R.id.playTimeTxt);
+        button7       = (Button) findViewById(R.id.button7);
+        gameTextOne   = (TextView) findViewById(R.id.gameTextOne);
+        textView8     = (TextView) findViewById(R.id.gameView8);
+        fragaEttBtn   = (ToggleButton) findViewById(R.id.fragaEttBtn);
         toggleButton2 = (ToggleButton) findViewById(R.id.toggleButton2);
         toggleButton3 = (ToggleButton) findViewById(R.id.toggleButton3);
         toggleButton4 = (ToggleButton) findViewById(R.id.toggleButton4);
@@ -92,23 +92,8 @@ public class GamesActivity extends AppCompatActivity {
         String butt = "";
         int points = 0;
         int time = Integer.parseInt(playTime);
-        char character;
-        for (int i = 0; i < rank.length(); i++)  //to check the characters of string..
-        {
-            character = rank.charAt(i);
 
-            if (Character.isUpperCase(character)) {
-                rank.toLowerCase();
-            }
-        }
-        for (int o = 0; o<game.length(); o++)  //to check the characters of string..
-        {
-            character = game.charAt(o);
 
-            if (Character.isUpperCase(character)) {
-                game.toLowerCase();
-            }
-        }
             switch (game) {
                 case "world of warcraft":
                     butt = "Du valde WoW";
