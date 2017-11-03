@@ -24,9 +24,6 @@ public class SResActivity extends AppCompatActivity {
 
         textView11 = (TextView) findViewById(R.id.textView11);
         imageView = (ImageView) findViewById(R.id.imageView);
-        Button clickWoW = (Button) findViewById(R.id.WoW);
-        Button clickLoL = (Button) findViewById(R.id.LoL);
-        Button clickCS = (Button) findViewById(R.id.CS);
         Bildbild(textEtt);
 
     }
