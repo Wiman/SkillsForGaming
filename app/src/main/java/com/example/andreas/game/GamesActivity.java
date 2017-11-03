@@ -93,6 +93,9 @@ public class GamesActivity extends AppCompatActivity {
         int points = 0;
         int time = Integer.parseInt(playTime);
 
+        rank = rank.toLowerCase();
+        game = game.toLowerCase();
+
 
             switch (game) {
                 case "world of warcraft":
