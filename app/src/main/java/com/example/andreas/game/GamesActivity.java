@@ -131,6 +131,26 @@ public class GamesActivity extends AppCompatActivity {
                 butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                 points = points + 4;
                 break;
+            case "Gold Nova":
+                butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                points = points + 1;
+                break;
+            case "Master Guardian":
+                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                points = points + 1;
+                break;
+            case "Legendary Eagle":
+                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                points = points + 1;
+                break;
+            case "Supreme":
+                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                points = points + 1;
+                break;
+            case "Global Elite":
+                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                points = points + 1;
+                break;
             default:
                 butt = "Appen hittar inte Spelnamn/Rank";
                 break;
