@@ -20,7 +20,7 @@ public class GamesActivity extends AppCompatActivity {
     TextView gameTextOne, textView8;
     ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4, toggleButton5, toggleButton6;
 
-    public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex;
+    public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex, buttButt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +64,8 @@ public class GamesActivity extends AppCompatActivity {
                          toggleFem = toggleButton5.getText().toString();
                          toggleSex = toggleButton6.getText().toString();
 
+                         buttButt = SpelInfo(game, rank, playTime, toggleEtt);
+
 
 
                         startActivity(new Intent(getApplicationContext(),GResActivity.class));
@@ -90,90 +92,103 @@ public class GamesActivity extends AppCompatActivity {
         String butt = "";
         int points = 0;
         int time = Integer.parseInt(playTime);
+        char character;
+        for (int i = 0; i < rank.length(); i++)  //to check the characters of string..
+        {
+            character = rank.charAt(i);
 
-        switch (game) {
-            case "World of Warcraft":
-                butt = "Du valde WoW";
-                break;
-            case "League of Legends":
-                butt = "Du valde LoL";
-                break;
-            case "Counter Strike":
-                butt = "Du valde CS:GO";
-                break;
-            default:
-                butt = "Appen hittar inte Spelnamn/Rank";
-                break;
+            if (Character.isUpperCase(character)) {
+                rank.toLowerCase();
+            }
         }
-        switch (rank) {
-            case "Bronze":
-                butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
-                break;
-            case "Silver":
-                butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
-                break;
-            case "Gold":
-                butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
-                break;
-            case "Platinum":
-                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                points = points + 1;
-                break;
-            case "Diamond":
-                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                points = points + 2;
-                break;
-            case "Master":
-                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                points = points + 3;
-                break;
-            case "Challenger":
-                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                points = points + 4;
-                break;
-            case "Gold Nova":
-                butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
-                points = points + 1;
-                break;
-            case "Master Guardian":
-                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                points = points + 1;
-                break;
-            case "Legendary Eagle":
-                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                points = points + 1;
-                break;
-            case "Supreme":
-                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                points = points + 1;
-                break;
-            case "Global Elite":
-                butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                points = points + 1;
-                break;
-            default:
-                butt = "Appen hittar inte Spelnamn/Rank";
-                break;
+        for (int o = 0; o<game.length(); o++)  //to check the characters of string..
+        {
+            character = game.charAt(o);
+
+            if (Character.isUpperCase(character)) {
+                game.toLowerCase();
+            }
         }
+            switch (game) {
+                case "world of warcraft":
+                    butt = "Du valde WoW";
+                    break;
+                case "league of legends":
+                    butt = "Du valde LoL";
+                    break;
+                case "counter strike":
+                    butt = "Du valde CS:GO";
+                    break;
+                default:
+                    butt = "Appen hittar inte Spelnamn/Rank";
+                    break;
+            }
+            switch (rank) {
+                case "bronze":
+                    butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                    break;
+                case "silver":
+                    butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                    break;
+                case "gold":
+                    butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                    break;
+                case "platinum":
+                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 1;
+                    break;
+                case "diamond":
+                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 2;
+                    break;
+                case "master":
+                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 3;
+                    break;
+                case "challenger":
+                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 4;
+                    break;
+                case "gold nova":
+                    butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 1;
+                    break;
+                case "master guardian":
+                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 1;
+                    break;
+                case "legendary eagle":
+                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 1;
+                    break;
+                case "supreme":
+                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 1;
+                    break;
+                case "global Elite":
+                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    points = points + 1;
+                    break;
+                default:
+                    butt = "Appen hittar inte Spelnamn/Rank";
+                    break;
+            }
 
-        butt = butt + "\npoints: " + points;
+            butt = butt + "\npoints: " + points;
 
-        if (time <= 200) {
-            butt = "Din inGameTime är för låg";
-        }
+            if (time <= 200) {
+                butt = "Din inGameTime är för låg";
+            }
 
-        if (toggleEtt.equals("Ja")){
-            butt = butt + "\nWhoopWhoop";
-        }
-        else {
-            butt = butt + "\nIngen WhoopWhoop";
-        }
-
+            if (toggleEtt.equals("Ja")) {
+                butt = butt + "\nWhoopWhoop";
+            } else {
+                butt = butt + "\nIngen WhoopWhoop";
+            }
 
 
+            return butt;
 
-
-        return butt;
     }
 
     public static String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra, String toggleFem, String toggleSex) {
