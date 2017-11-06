@@ -41,7 +41,7 @@ public class AllSkillsActivity extends AppCompatActivity {
                         (
                         "Dom här skillsen får personen av att spela WoW\n" +
                         "\n" +
-                        "RelationsKompetens</b>\n" +
+                        "RelationsKompetens\n" +
                         "Sammarbetsförmåga\n" +
                         "Konfliktlösningsförmåga\n" +
                         "Fokus\n" +
@@ -93,7 +93,7 @@ public class AllSkillsActivity extends AppCompatActivity {
 
                 textView13.setText("League of Legends är ett lagbaserat spel där man är 5 personer som sammarbetar för att ta sönder motståndarens bas." +
                         "Detta gör man genom sammarbete och att dela upp rollerna inom laget så att man får en bra kombination. " +
-                        "\nKombinationen mellan en så kallad support och carry kan vara helt avgörande för framgången i spelet. Detta skapar ett tvång att sammarbeta för att nå det gemensamma målet");
+                        "\nKombinationen mellan en så kallad support och carry kan vara helt avgörande för framgången i spelet. Detta skapar en anledning att effektivt sammarbeta för att nå det gemensamma målet");
 
                 textView12.setText(
                         "Dom här skillsen får personen av att spela LoL\n" +
