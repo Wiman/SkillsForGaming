@@ -94,6 +94,10 @@ public class AllSkillsActivity extends AppCompatActivity {
 
                 textView8.setText("League of Legends");
 
+                textView13.setText("League of Legends är ett lagbaserat spel där man är 5 personer som sammarbetar för att ta sönder motståndarens bas." +
+                        "Detta gör man genom sammarbete och att dela upp rollerna inom laget så att man får en bra kombination. " +
+                        "\nKombinationen mellan en så kallad support och carry kan vara helt avgörande för framgången i spelet. Detta skapar ett tvång att sammarbeta för att nå det gemensamma målet");
+
                 textView12.setText(
                         "Dom här skillsen får personen av att spela LoL\n" +
                         "\n" +

@@ -121,39 +121,39 @@ public class GamesActivity extends AppCompatActivity {
                     break;
                 case "platinum":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 1;
+                    //points = points + 1;
                     break;
                 case "diamond":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 2;
+                    //points = points + 2;
                     break;
                 case "master":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 3;
+                    //points = points + 3;
                     break;
                 case "challenger":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 4;
+                    //points = points + 4;
                     break;
                 case "gold nova":
                     butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 1;
+                    //points = points + 1;
                     break;
                 case "master guardian":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 1;
+                    //points = points + 1;
                     break;
                 case "legendary eagle":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 1;
+                    //points = points + 1;
                     break;
                 case "supreme":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 1;
+                    //points = points + 1;
                     break;
                 case "global elite":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
-                    points = points + 1;
+                    //points = points + 1;
                     break;
                 default:
                     butt = "Appen hittar inte Spelnamn/Rank";
