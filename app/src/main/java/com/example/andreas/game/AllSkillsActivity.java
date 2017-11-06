@@ -11,6 +11,8 @@ import static com.example.andreas.game.SResActivity.enkelt;
 public class AllSkillsActivity extends AppCompatActivity {
 
     TextView textView12;
+    TextView textView13;
+    TextView textView8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +20,22 @@ public class AllSkillsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_all_skills);
 
         textView12 = (TextView) findViewById(R.id.textView12);
-
+        textView13 = (TextView) findViewById(R.id.textView13);
+        textView8 = (TextView) findViewById(R.id.textView8);
         switch (enkelt) {
 
             case "WoW":
+
+                textView8.setText("World of Warcraft");
+
+                textView13.setText(
+
+                        "World of Warcraft är ett MMORPG(Massive Multiplayer Online Roleplaying Game. \n"  +
+                                "I spelet finns det PVP(Player VS Player) och PVE (Player VS Enemies)\n" +
+                                "För att kunna komma långt i spelet krävs det sammarbete med andra personer\n" +
+                                "Du måste kunna hålla fokus upp under längre tid i större PVE content."
+                );
+
 
                 textView12.setText
                         (
@@ -46,6 +60,17 @@ public class AllSkillsActivity extends AppCompatActivity {
 
             case "Cs":
 
+                textView8.setText("Counter Strike");
+
+                textView13.setText("CS är ett FPS(First Person Shooter.\n" +
+                        "I en match är det 10 personer som spelar . 2 lag av 5 personer försöker nå 16 rundor först.\n" +
+                        "Ena laget spelar som terrorister och andra laget är Counter terrorister\n" +
+                        "Terroristernas mål är att plantera en bomb som ska sprängas\n" +
+                        "Counter terrorists har som mål att stoppa dom ifrån att göra detta.\n" +
+                        "Det finns 2 specifika platser på varje karta där terroristerna kan plantera bomben\n" +
+                        "Efter 15 rundor byter lagen sida och försten till 16 vunna rundor vinner matchen\n" +
+                        "");
+
                 textView12.setText (
                         "Dom här skillsen får personen av att spela CS\n" +
                         "\n" +
@@ -66,6 +91,8 @@ public class AllSkillsActivity extends AppCompatActivity {
                 break;
 
             case "LoL":
+
+                textView8.setText("League of Legends");
 
                 textView12.setText(
                         "Dom här skillsen får personen av att spela LoL\n" +
