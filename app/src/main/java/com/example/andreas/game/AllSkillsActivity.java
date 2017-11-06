@@ -31,9 +31,9 @@ public class AllSkillsActivity extends AppCompatActivity {
                 textView13.setText(
 
                         "World of Warcraft är ett MMORPG(Massive Multiplayer Online Roleplaying Game. \n"  +
-                                "I spelet finns det PVP(Player VS Player) och PVE (Player VS Enemies)\n" +
-                                "För att kunna komma långt i spelet krävs det att du kan sammarbeta med runt 25 andra personer\n" +
-                                "Du behöver även kunna vara flexibel med vilken roll du har i spslet. Ifall din roll inte behövs just nu men en roll du kan spela finnns ledig ."
+                                "I spelet finns det PVP(Player VS Player) och PVE (Player VS Environment)\n" +
+                                "För att kunna komma långt i spelet krävs det att du kan sammarbeta med runt 25 andra personer för att uppnå ert gemensamma mål\n" +
+                                "Du behöver även kunna vara flexibel med vilken roll du har i spelet eftersom att olika possitioner behöver fyllas."
                 );
 
 
