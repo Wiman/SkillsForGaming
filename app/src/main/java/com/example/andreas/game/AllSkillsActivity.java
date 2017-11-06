@@ -63,13 +63,8 @@ public class AllSkillsActivity extends AppCompatActivity {
                 textView8.setText("Counter Strike");
 
                 textView13.setText("CS är ett FPS(First Person Shooter.\n" +
-                        "I en match är det 10 personer som spelar . 2 lag av 5 personer försöker nå 16 rundor först.\n" +
-                        "Ena laget spelar som terrorister och andra laget är Counter terrorister\n" +
-                        "Terroristernas mål är att plantera en bomb som ska sprängas\n" +
-                        "Counter terrorists har som mål att stoppa dom ifrån att göra detta.\n" +
-                        "Det finns 2 specifika platser på varje karta där terroristerna kan plantera bomben\n" +
-                        "Efter 15 rundor byter lagen sida och försten till 16 vunna rundor vinner matchen\n" +
-                        "");
+                        "Spelet är lagbaserat och varje game får du 4 nya personer att spela med. Du måste kunna sammarbeta med dom här personerna för att kunna komma frammot i spelet." +
+                        "Eftersom att du oftast spelar med nya personer så blir man väldigt flexibel med vad man ska göra och kommunikation är ett måste för att vinna.");
 
                 textView12.setText (
                         "Dom här skillsen får personen av att spela CS\n" +
