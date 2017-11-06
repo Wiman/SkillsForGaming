@@ -32,8 +32,8 @@ public class AllSkillsActivity extends AppCompatActivity {
 
                         "World of Warcraft är ett MMORPG(Massive Multiplayer Online Roleplaying Game. \n"  +
                                 "I spelet finns det PVP(Player VS Player) och PVE (Player VS Enemies)\n" +
-                                "För att kunna komma långt i spelet krävs det sammarbete med andra personer\n" +
-                                "Du måste kunna hålla fokus upp under längre tid i större PVE content."
+                                "För att kunna komma långt i spelet krävs det att du kan sammarbeta med runt 25 andra personer\n" +
+                                "Du behöver även kunna vara flexibel med vilken roll du har i spslet. Ifall din roll inte behövs just nu men en roll du kan spela finnns ledig ."
                 );
 
 
@@ -65,7 +65,7 @@ public class AllSkillsActivity extends AppCompatActivity {
                 textView13.setText("CS är ett FPS(First Person Shooter.\n" +
                         "Spelet är lagbaserat 5 mot 5. Spelet kräver sammarbete med de här personerna för att kunna vinna." +
                         "Målet är att tillsammans anfalla/försvara en plats inom spelet. " +
-                        "Efter att du oftast spelar med nya personer och möter nya fiender så blir man väldigt flexibel med vad man ska göra och kommunikation är ett måste för att vinna." +
+                        "Eftersom att du oftast spelar med nya personer och möter nya fiender så blir man väldigt flexibel med vad man ska göra och kommunikation är ett måste för att vinna." +
                         "");
 
                 textView12.setText (
