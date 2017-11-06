@@ -92,7 +92,9 @@ public class GamesActivity extends AppCompatActivity {
         int time = Integer.parseInt(playTime);
 
         rank = rank.toLowerCase();
+        rank = rank.trim();
         game = game.toLowerCase();
+        game = game.trim();
 
 
             switch (game) {
