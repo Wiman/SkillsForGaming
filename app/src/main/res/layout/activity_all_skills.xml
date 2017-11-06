@@ -29,7 +29,7 @@
         <TextView
             android:id="@+id/textView13"
             android:layout_width="362dp"
-            android:layout_height="160dp"
+            android:layout_height="264dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:text="TextView" />
