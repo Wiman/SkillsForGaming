@@ -63,8 +63,10 @@ public class AllSkillsActivity extends AppCompatActivity {
                 textView8.setText("Counter Strike");
 
                 textView13.setText("CS är ett FPS(First Person Shooter.\n" +
-                        "Spelet är lagbaserat och varje game får du 4 nya personer att spela med. Du måste kunna sammarbeta med dom här personerna för att kunna komma frammot i spelet." +
-                        "Eftersom att du oftast spelar med nya personer så blir man väldigt flexibel med vad man ska göra och kommunikation är ett måste för att vinna.");
+                        "Spelet är lagbaserat 5 mot 5. Spelet kräver sammarbete med de här personerna för att kunna vinna." +
+                        "Målet är att tillsammans anfalla/försvara en plats inom spelet. " +
+                        "Efter att du oftast spelar med nya personer och möter nya fiender så blir man väldigt flexibel med vad man ska göra och kommunikation är ett måste för att vinna." +
+                        "");
 
                 textView12.setText (
                         "Dom här skillsen får personen av att spela CS\n" +
