@@ -184,6 +184,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="64dp"
+                android:layout_marginBottom="15dp"
                 android:background="@android:color/holo_blue_dark"
                 android:text="Submit"
                 android:textColorLink="@color/colorAccent"
@@ -193,13 +194,6 @@
                 tools:layout_constraintBottom_creator="1"
                 tools:layout_constraintLeft_creator="1"
                 tools:layout_constraintTop_creator="1" />
-            <TextView
-                android:id="@+id/gameView8"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="20dp"
-                android:text="HEJ TITTA PÅ MIG"
-                android:visibility="invisible"/>
 
         </LinearLayout>
 

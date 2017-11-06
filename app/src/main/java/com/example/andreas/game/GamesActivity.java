@@ -8,11 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-import static android.R.attr.editable;
+
 
 public class GamesActivity extends AppCompatActivity {
     Button button7;
@@ -20,7 +19,7 @@ public class GamesActivity extends AppCompatActivity {
     TextView gameTextOne, textView8;
     ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4, toggleButton5, toggleButton6;
 
-    public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex, buttButt;
+    public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex, buttButt, game;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +32,6 @@ public class GamesActivity extends AppCompatActivity {
         playTimeTxt   = (EditText) findViewById(R.id.playTimeTxt);
         button7       = (Button) findViewById(R.id.button7);
         gameTextOne   = (TextView) findViewById(R.id.gameTextOne);
-        textView8     = (TextView) findViewById(R.id.gameView8);
         fragaEttBtn   = (ToggleButton) findViewById(R.id.fragaEttBtn);
         toggleButton2 = (ToggleButton) findViewById(R.id.toggleButton2);
         toggleButton3 = (ToggleButton) findViewById(R.id.toggleButton3);
@@ -48,7 +46,7 @@ public class GamesActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Log.v("EditText", gameTxt.getText().toString());
-                        String game = gameTxt.getText().toString();
+                         game = gameTxt.getText().toString();
 
                         Log.d("EditText", rankTxt.getText().toString());
                         String rank = rankTxt.getText().toString();
@@ -64,7 +62,7 @@ public class GamesActivity extends AppCompatActivity {
                          toggleFem = toggleButton5.getText().toString();
                          toggleSex = toggleButton6.getText().toString();
 
-                         buttButt = SpelInfo(game, rank, playTime, toggleEtt);
+                         buttButt = SpelInfo(game, rank, playTime);
 
 
 
@@ -87,7 +85,7 @@ public class GamesActivity extends AppCompatActivity {
 
     }
 
-    public String SpelInfo(String game, String rank, String playTime, String toggleEtt) {
+    public String SpelInfo(String game, String rank, String playTime) {
 
         String butt = "";
         int points = 0;
@@ -99,16 +97,16 @@ public class GamesActivity extends AppCompatActivity {
 
             switch (game) {
                 case "world of warcraft":
-                    butt = "Du valde WoW";
+                    //butt = "Du valde WoW";
                     break;
                 case "league of legends":
-                    butt = "Du valde LoL";
+                    //butt = "Du valde LoL";
                     break;
                 case "counter strike":
-                    butt = "Du valde CS:GO";
+                    //butt = "Du valde CS:GO";
                     break;
                 default:
-                    butt = "Appen hittar inte Spelnamn/Rank";
+                    //butt = "Appen hittar inte Spelnamn/Rank";
                     break;
             }
             switch (rank) {
@@ -153,7 +151,7 @@ public class GamesActivity extends AppCompatActivity {
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     points = points + 1;
                     break;
-                case "global Elite":
+                case "global elite":
                     butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     points = points + 1;
                     break;
@@ -162,64 +160,13 @@ public class GamesActivity extends AppCompatActivity {
                     break;
             }
 
-            butt = butt + "\npoints: " + points;
+            //butt = butt + "\npoints: " + points;
 
-            if (time <= 200) {
+            if (time <= 199) {
                 butt = "Din inGameTime är för låg";
             }
 
-            if (toggleEtt.equals("Ja")) {
-                butt = butt + "\nWhoopWhoop";
-            } else {
-                butt = butt + "\nIngen WhoopWhoop";
-            }
-
-
             return butt;
 
-    }
-
-    public static String Resultat(String toggleEtt, String toggleTva, String toggleTre, String toggleFyra, String toggleFem, String toggleSex) {
-        String result="";
-
-        if (toggleEtt.equals("Ja")){
-            result = result + "Spelaren blir lätt stressad";
-        }
-        else {
-            result = result + "Spelaren blir inte stressad av spelet";
-        }
-        if (toggleTva.equals("Ja")){
-            result = result + "\nSpelaren är en ledare";
-        }
-        else {
-            result = result + "\nSpelaren är inte en ledare";
-        }
-        if (toggleTre.equals("Ja")){
-            result = result + "\nSpelaren har skapat ett lag";
-        }
-        else {
-            result = result + "\nSpelaren har inte skapat ett lag";
-        }
-        if (toggleFyra.equals("Spelar i lag")){
-            result = result + "\nSpelaren är en teamplayer";
-        }
-        else {
-            result = result + "\nSpelaren är solo spelare";
-        }
-        if (toggleFem.equals("Ja")){
-            result = result + "\nHar deltagit i en turnering";
-        }
-        else {
-            result = result + "\nHar inte spelat i en turnering";
-        }
-        if (toggleSex.equals("Ja")){
-            result = result + "\nSpelaren spelar flera roller";
-        }
-        else {
-            result = result + "\nSpelaren spelar en roll";
-        }
-
-
-        return result;
     }
 }
