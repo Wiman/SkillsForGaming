@@ -29,10 +29,10 @@ public class GResActivity extends AppCompatActivity {
                 spelSkills = "Du bör ha dessa kompetenser:\nTålamod\nKommunikationsfärdigheter\nLedarskapsförmågor";
                 break;
             case "league of legends":
-                spelSkills = "Du bör ha dessa kompetenser:\nNormal\nLång\nSmal";
+                spelSkills = "Du bör ha dessa kompetenser:\nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
                 break;
             case "counter strike":
-                spelSkills = "Du bör ha dessa kompetenser:\n \nStark\nSnygg\nSmart";
+                spelSkills = "Du bör ha dessa kompetenser:\n \nProblemlösning\nKommunikativa förmågor\nAnsvarstagande ";
                 break;
             default:
                 spelSkills = "Du har nog stavat fel!";
