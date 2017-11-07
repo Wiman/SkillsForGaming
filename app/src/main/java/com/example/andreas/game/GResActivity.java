@@ -26,10 +26,10 @@ public class GResActivity extends AppCompatActivity {
 
         switch (game){
             case "world of warcraft":
-                spelSkills = "Du bör ha dessa kompetenser:\nTålamod\nKommunikationsfärdigheter\nLedarskapsförmågor";
+                spelSkills = "Du bör ha dessa kompetenser:\n \nTålamod\nKommunikationsfärdigheter\nLedarskapsförmågor";
                 break;
             case "league of legends":
-                spelSkills = "Du bör ha dessa kompetenser:\nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
+                spelSkills = "Du bör ha dessa kompetenser:\n \nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
                 break;
             case "counter strike":
                 spelSkills = "Du bör ha dessa kompetenser:\n \nProblemlösning\nKommunikativa förmågor\nAnsvarstagande ";
@@ -37,6 +37,8 @@ public class GResActivity extends AppCompatActivity {
             default:
                 spelSkills = "Du har nog stavat fel!";
         }
+
+        spelSkills = spelSkills + "\nFlexibilitet \nFokus \nBeslutsförmåga";
 
         textView9 = (TextView) findViewById(R.id.textView9);
         textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex)+ /*"\n" + */buttButt + "\n" +"\n" +"\n" +spelSkills);

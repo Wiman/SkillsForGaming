@@ -16,7 +16,7 @@ import android.widget.ToggleButton;
 public class GamesActivity extends AppCompatActivity {
     Button button7;
     EditText gameTxt, rankTxt, playTimeTxt;
-    TextView gameTextOne, textView8;
+    TextView gameTextOne;
     ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4, toggleButton5, toggleButton6;
 
     public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex, buttButt, game;
@@ -88,7 +88,7 @@ public class GamesActivity extends AppCompatActivity {
     public String SpelInfo(String game, String rank, String playTime) {
 
         String butt = "";
-        int points = 0;
+        //int points = 0;
         int time = Integer.parseInt(playTime);
 
         rank = rank.toLowerCase();
