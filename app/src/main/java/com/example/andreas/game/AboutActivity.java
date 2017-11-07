@@ -14,7 +14,7 @@ public class AboutActivity extends AppCompatActivity {
         final TextView aboutText = (TextView) findViewById(R.id.textView7);
 
         aboutText.setText("\n \nHello world! \n\nWe are doing this prototype to demonstrate what skills gamers aquire while playing videogames." +
-                "\u000BVideogames today require the players to engage in strategical thinking, teamworking and individual growth. " +
-                "\u000BAnd practice makes perfect. Gamers spend an incredible amout of time unknowingly developing these skills.");
+                "\u000BVideogames today require the players to engage in strategical thinking, teamworking and individual growth, " +
+                "\u000Band practice makes perfect. Gamers spend an incredible amout of time unknowingly developing these skills.");
     }
 }

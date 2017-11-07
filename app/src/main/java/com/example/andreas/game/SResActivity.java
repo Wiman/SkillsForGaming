@@ -113,12 +113,15 @@ public class SResActivity extends AppCompatActivity {
 
                case "Eh":
                    imageView.setImageResource(R.drawable.tecken);
-                   textView11.setText ("Du vill ha en Eh ..? Gamer!");
+                   textView11.setText ("Du har valt egenskaper som alla spelen i vår databas har gemensamt!");
+                   clickWoW.setVisibility(View.VISIBLE);
+                   clickLoL.setVisibility(View.VISIBLE);
+                   clickCS.setVisibility(View.VISIBLE);
                    break;
 
                default:
                    imageView.setImageResource(R.drawable.tecken);
-                   textView11.setText("Du har inte valt något bra spel!!");
+                   textView11.setText("Du har inte valt några skills!!");
                    break;
            }
 
