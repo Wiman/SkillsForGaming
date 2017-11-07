@@ -74,6 +74,10 @@
                 tools:layout_constraintRight_creator="1"
                 tools:layout_constraintTop_creator="1" />
 
+            <ExpandableListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
             <TextView
                 android:id="@+id/gameTextOne"
                 android:layout_width="20dp"
