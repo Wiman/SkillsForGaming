@@ -73,7 +73,7 @@ public class SResActivity extends AppCompatActivity {
                case "WoW":
                    imageView.setImageResource(R.drawable.warcraftlogo);
                    textView11.setText ("Du vill ha en World of Warcraft spelare!");
-                    clickWoW.setVisibility(View.VISIBLE);
+                   clickWoW.setVisibility(View.VISIBLE);
                    break;
 
                case "Cs":
@@ -93,7 +93,6 @@ public class SResActivity extends AppCompatActivity {
                    textView11.setText ("Du vill ha en League of Legends eller en World of Warcraft spelare!");
                    clickWoW.setVisibility(View.VISIBLE);
                    clickLoL.setVisibility(View.VISIBLE);
-
                    break;
 
                case "Cs/LoL":
@@ -101,7 +100,6 @@ public class SResActivity extends AppCompatActivity {
                    textView11.setText ("Du vill ha en Counter-Strike eller en League of Legends Spelare!");
                    clickLoL.setVisibility(View.VISIBLE);
                    clickCS.setVisibility(View.VISIBLE);
-
                    break;
 
                case "Cs/WoW":
