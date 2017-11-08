@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        tools:layout_constraintLeft="1"
+        tools:layout_constraintRight="1"
+        tools:layout_constraintTop="1"
         tools:layout_editor_absoluteX="42dp"
         tools:layout_editor_absoluteY="156dp">
 
@@ -19,15 +22,17 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
             android:layout_marginTop="20dp"
-            android:text="Spel"
             android:textAlignment="center"
             android:textSize="25sp"
             android:textStyle="bold"
+            android:text="Spel"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp" />
 
         <TextView
             android:id="@+id/textView13"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="79dp"
             android:layout_width="362dp"
             android:layout_height="264dp"
             android:layout_marginLeft="10dp"
@@ -37,6 +42,8 @@
 
         <TextView
             android:id="@+id/textView12"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="79dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

@@ -55,12 +55,12 @@ public class GamesActivity extends AppCompatActivity {
                         String playTime = playTimeTxt.getText().toString();
 
                         Log.i("EditText", fragaEttBtn.getText().toString());
-                         toggleEtt = fragaEttBtn.getText().toString();
-                         toggleTva = toggleButton2.getText().toString();
-                         toggleTre = toggleButton3.getText().toString();
+                         toggleEtt  = fragaEttBtn.getText().toString();
+                         toggleTva  = toggleButton2.getText().toString();
+                         toggleTre  = toggleButton3.getText().toString();
                          toggleFyra = toggleButton4.getText().toString();
-                         toggleFem = toggleButton5.getText().toString();
-                         toggleSex = toggleButton6.getText().toString();
+                         toggleFem  = toggleButton5.getText().toString();
+                         toggleSex  = toggleButton6.getText().toString();
 
                          buttButt = SpelInfo(game, rank, playTime);
 
