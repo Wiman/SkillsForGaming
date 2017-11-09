@@ -43,7 +43,7 @@
         tools:layout_constraintTop_creator="1"
         android:padding="10dp"
         android:background="@drawable/minknapp3"
-        tools:text="Skriv in Spel" />
+        android:text="Välj spel" />
 
     <Button
         android:id="@+id/button4"
@@ -53,7 +53,6 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="1dp"
-
         android:textColor="@android:color/white"
         android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,7 +65,7 @@
         tools:layout_constraintTop_creator="1"
         android:padding="10dp"
         android:background="@drawable/minknapp2"
-        tools:text="Välj\nMjuka kompetenser" />
+        android:text="Välj\n kompetenser" />
 
     <Button
         android:id="@+id/button"
