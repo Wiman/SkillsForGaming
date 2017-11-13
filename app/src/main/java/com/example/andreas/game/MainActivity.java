@@ -3,9 +3,18 @@ package com.example.andreas.game;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.content.Context;
 import android.widget.Button;
+import android.widget.Toast;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -43,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+
+
+
     }
 
     }

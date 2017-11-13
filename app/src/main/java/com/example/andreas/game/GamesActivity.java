@@ -9,11 +9,21 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class GamesActivity extends AppCompatActivity {
+
+
     Button button7;
     EditText gameTxt, rankTxt, playTimeTxt;
     TextView gameTextOne;
@@ -25,6 +35,42 @@ public class GamesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_games);
+
+
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(APIInt.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        APIInt api = retrofit.create(APIInt.class);
+
+        Call<List<API>> call = api.getGames();
+
+        call.enqueue(new Callback<List<API>>() {
+            @Override
+            public void onResponse(Call<List<API>> call, Response<List<API>> response) {
+                List<API> games = response.body();
+                for (API h: games){
+                    Log.d("_id" , String.valueOf(h.get_id()));
+
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<API>> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+
+
+
+
+
+
+
 
 
         gameTxt       = (EditText) findViewById(R.id.gameTxt);
