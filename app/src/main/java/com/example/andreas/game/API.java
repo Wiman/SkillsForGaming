@@ -1,5 +1,6 @@
 package com.example.andreas.game;
 
+import java.lang.reflect.Array;
 import java.util.List;
 
 import retrofit2.Call;
@@ -11,10 +12,14 @@ import retrofit2.Call;
 public class API {
     private int _id;
     private String name;
+    private String gameDescription;
+    private String[] gameSkillss;
 
     public API(int _id, String name) {
         this._id = _id;
         this.name = name;
+        this.gameDescription = gameDescription;
+        this.gameSkillss = gameSkillss;
     }
 
     public int get_id() {
@@ -25,4 +30,11 @@ public class API {
         return name;
     }
 
+    public String getGameDescribtion() {
+        return gameDescription;
+    }
+
+    public String[] getGameSkills() {
+        return gameSkillss;
+    }
 }
