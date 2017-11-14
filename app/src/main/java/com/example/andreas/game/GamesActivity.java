@@ -13,9 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -38,7 +36,7 @@ public class GamesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_games);
 
-
+        final String [] gamesArray= new String[8];
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(APIInt.BASE_URL)
@@ -55,7 +53,11 @@ public class GamesActivity extends AppCompatActivity {
                 List<API> games = response.body();
                 for (API h: games){
                     Log.d("_id" , String.valueOf(h.get_id()));
+
+                    gamesArray [Integer.valueOf(h.get_id())]=String.valueOf(h.get_id());
+                    Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(h.get_id())], Toast.LENGTH_SHORT).show();
                 }
+
             }
 
             @Override
@@ -63,6 +65,8 @@ public class GamesActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
+
+
 
         gameTxt       = (EditText) findViewById(R.id.gameTxt);
         rankTxt       = (EditText) findViewById(R.id.rankTxt);
