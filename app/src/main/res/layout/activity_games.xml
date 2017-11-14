@@ -29,25 +29,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <Spinner
-                android:id="@+id/spinner1"
-                android:layout_width="match_parent"
-                android:layout_height="35dp" />
-
-            <EditText
+            <AutoCompleteTextView
                 android:id="@+id/gameTxt"
                 android:layout_width="242dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="44dp"
-                android:ems="10"
-                android:hint="Game"
-                android:inputType="textPersonName"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_constraintLeft_creator="1"
-                tools:layout_constraintTop_creator="1" />
+                android:layout_marginTop="22dp"
+                android:hint="Games"/>
 
             <EditText
                 android:id="@+id/playTimeTxt"

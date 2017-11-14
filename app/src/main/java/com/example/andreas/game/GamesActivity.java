@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -55,7 +55,6 @@ public class GamesActivity extends AppCompatActivity {
                 List<API> games = response.body();
                 for (API h: games){
                     Log.d("_id" , String.valueOf(h.get_id()));
-
                 }
             }
 
@@ -77,13 +76,21 @@ public class GamesActivity extends AppCompatActivity {
         toggleButton5 = (ToggleButton) findViewById(R.id.toggleButton5);
         toggleButton6 = (ToggleButton) findViewById(R.id.toggleButton6);
 
-        Spinner dropdown = (Spinner) findViewById(R.id.spinner1);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, GameName);
+        AutoCompleteTextView textView = (AutoCompleteTextView)
+                findViewById(R.id.gameTxt);
+                textView.setAdapter(adapter);
+
+
+
+        /*Spinner dropdown = (Spinner) findViewById(R.id.spinner1);
         //create a list of items for the spinner.
         String[] items = new String[]{"Game", "League of Legends", "World of Warcraft", "Counter-Strike"};
         //create an adapter to describe how the items are displayed, adapters are used in several places in android.
         //There are multiple variations of this, but this is the basic variant.
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
-        dropdown.setAdapter(adapter);
+        dropdown.setAdapter(adapter);*/
 
         button7.setOnClickListener(
                 new View.OnClickListener() {
@@ -215,4 +222,7 @@ public class GamesActivity extends AppCompatActivity {
             return butt;
 
     }
+    private static final String[] GameName = new String[]{
+            "World of Warcraft", "League of Legends", "Counter-Strike", "Minecraft"
+    };
 }
