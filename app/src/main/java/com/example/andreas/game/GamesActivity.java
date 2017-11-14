@@ -29,6 +29,7 @@ public class GamesActivity extends AppCompatActivity {
     TextView gameTextOne;
     ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4, toggleButton5, toggleButton6;
 
+    public static String [] hoHoHo;
     public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex, buttButt, game;
 
     @Override
@@ -59,9 +60,9 @@ public class GamesActivity extends AppCompatActivity {
                 for (API y: games){
                     Log.d("name" , String.valueOf(y.getName()));
                     gamesArray [Integer.valueOf(y.get_id())]=String.valueOf(y.getName());
-                    Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(y.get_id())], Toast.LENGTH_SHORT).show();
+                   //Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(y.get_id())], Toast.LENGTH_SHORT).show();
                 }
-
+                //hoHoHo = gamesArray;
             }
 
             @Override
@@ -69,7 +70,6 @@ public class GamesActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
-
 
 
         gameTxt       = (EditText) findViewById(R.id.gameTxt);
@@ -84,8 +84,11 @@ public class GamesActivity extends AppCompatActivity {
         toggleButton5 = (ToggleButton) findViewById(R.id.toggleButton5);
         toggleButton6 = (ToggleButton) findViewById(R.id.toggleButton6);
 
+
+        //Toast.makeText(getApplicationContext(), hoHoHo[2],Toast.LENGTH_LONG).show();
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, GameName);
+                android.R.layout.simple_dropdown_item_1line, GameName); //Fixa en lösning!! 
         AutoCompleteTextView textView = (AutoCompleteTextView)
                 findViewById(R.id.gameTxt);
                 textView.setAdapter(adapter);
@@ -230,7 +233,5 @@ public class GamesActivity extends AppCompatActivity {
             return butt;
 
     }
-    private static final String[] GameName = new String[]{
-            "World of Warcraft", "League of Legends", "Counter-Strike", "Minecraft"
-    };
+    private static final String[] GameName = new String[]  {"World of Warcraft", "League of Legends", "Counter-Strike", "Minecraft"};
 }
