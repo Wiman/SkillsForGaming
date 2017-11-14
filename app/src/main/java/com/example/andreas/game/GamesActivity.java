@@ -53,9 +53,13 @@ public class GamesActivity extends AppCompatActivity {
                 List<API> games = response.body();
                 for (API h: games){
                     Log.d("_id" , String.valueOf(h.get_id()));
-
                     gamesArray [Integer.valueOf(h.get_id())]=String.valueOf(h.get_id());
-                    Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(h.get_id())], Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(h.get_id())], Toast.LENGTH_SHORT).show();
+                }
+                for (API y: games){
+                    Log.d("name" , String.valueOf(y.getName()));
+                    gamesArray [Integer.valueOf(y.get_id())]=String.valueOf(y.getName());
+                    Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(y.get_id())], Toast.LENGTH_SHORT).show();
                 }
 
             }
