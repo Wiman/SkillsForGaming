@@ -23,21 +23,20 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GamesActivity extends AppCompatActivity {
 
-
     Button button7;
     EditText gameTxt, rankTxt, playTimeTxt;
     TextView gameTextOne;
     ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4, toggleButton5, toggleButton6;
 
-    public static String [] hoHoHo;
+
     public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex, buttButt, game;
+    public String[] gaga = new String[8];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_games);
-
-        final String [] gamesArray= new String[8];
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(APIInt.BASE_URL)
@@ -48,21 +47,25 @@ public class GamesActivity extends AppCompatActivity {
 
         Call<List<API>> call = api.getGames();
 
+
         call.enqueue(new Callback<List<API>>() {
             @Override
             public void onResponse(Call<List<API>> call, Response<List<API>> response) {
                 List<API> games = response.body();
+                String [] gamesArray= new String[8];
                 for (API h: games){
                     Log.d("_id" , String.valueOf(h.get_id()));
                     gamesArray [Integer.valueOf(h.get_id())]=String.valueOf(h.get_id());
-                    //Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(h.get_id())], Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), String.valueOf(h.get_id()), Toast.LENGTH_SHORT).show();
                 }
                 for (API y: games){
                     Log.d("name" , String.valueOf(y.getName()));
                     gamesArray [Integer.valueOf(y.get_id())]=String.valueOf(y.getName());
-                   //Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(y.get_id())], Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(y.get_id())], Toast.LENGTH_SHORT).show();
+
                 }
-                //hoHoHo = gamesArray;
+                ForToast(gamesArray);
+
             }
 
             @Override
@@ -70,6 +73,13 @@ public class GamesActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, gaga); //Fixa en lösning!!
+        AutoCompleteTextView textView = (AutoCompleteTextView)
+                findViewById(R.id.gameTxt);
+        textView.setAdapter(adapter);
 
 
         gameTxt       = (EditText) findViewById(R.id.gameTxt);
@@ -85,14 +95,7 @@ public class GamesActivity extends AppCompatActivity {
         toggleButton6 = (ToggleButton) findViewById(R.id.toggleButton6);
 
 
-        //Toast.makeText(getApplicationContext(), hoHoHo[2],Toast.LENGTH_LONG).show();
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, GameName); //Fixa en lösning!! 
-        AutoCompleteTextView textView = (AutoCompleteTextView)
-                findViewById(R.id.gameTxt);
-                textView.setAdapter(adapter);
-
+       // Toast.makeText(getApplicationContext(), hoHoHo[2],Toast.LENGTH_LONG).show();
 
 
         /*Spinner dropdown = (Spinner) findViewById(R.id.spinner1);
@@ -233,5 +236,13 @@ public class GamesActivity extends AppCompatActivity {
             return butt;
 
     }
+    public void ForToast (String[]gamesArray){
+
+        Toast.makeText(getApplicationContext(),gamesArray[1], Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), gamesArray[3], Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), gamesArray[6], Toast.LENGTH_SHORT).show();
+
+    }
+
     private static final String[] GameName = new String[]  {"World of Warcraft", "League of Legends", "Counter-Strike", "Minecraft"};
 }
