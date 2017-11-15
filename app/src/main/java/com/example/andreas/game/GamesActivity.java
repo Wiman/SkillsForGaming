@@ -28,10 +28,7 @@ public class GamesActivity extends AppCompatActivity {
     TextView gameTextOne;
     ToggleButton fragaEttBtn, toggleButton2, toggleButton3, toggleButton4, toggleButton5, toggleButton6;
 
-
     public static String toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex, buttButt, game;
-    public String[] gaga = new String[8];
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,13 +72,6 @@ public class GamesActivity extends AppCompatActivity {
         });
 
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, gaga); //Fixa en lösning!!
-        AutoCompleteTextView textView = (AutoCompleteTextView)
-                findViewById(R.id.gameTxt);
-        textView.setAdapter(adapter);
-
-
         gameTxt       = (EditText) findViewById(R.id.gameTxt);
         rankTxt       = (EditText) findViewById(R.id.rankTxt);
         playTimeTxt   = (EditText) findViewById(R.id.playTimeTxt);
@@ -93,18 +83,7 @@ public class GamesActivity extends AppCompatActivity {
         toggleButton4 = (ToggleButton) findViewById(R.id.toggleButton4);
         toggleButton5 = (ToggleButton) findViewById(R.id.toggleButton5);
         toggleButton6 = (ToggleButton) findViewById(R.id.toggleButton6);
-
-
-       // Toast.makeText(getApplicationContext(), hoHoHo[2],Toast.LENGTH_LONG).show();
-
-
-        /*Spinner dropdown = (Spinner) findViewById(R.id.spinner1);
-        //create a list of items for the spinner.
-        String[] items = new String[]{"Game", "League of Legends", "World of Warcraft", "Counter-Strike"};
-        //create an adapter to describe how the items are displayed, adapters are used in several places in android.
-        //There are multiple variations of this, but this is the basic variant.
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
-        dropdown.setAdapter(adapter);*/
+        
 
         button7.setOnClickListener(
                 new View.OnClickListener() {
@@ -238,11 +217,15 @@ public class GamesActivity extends AppCompatActivity {
     }
     public void ForToast (String[]gamesArray){
 
-        Toast.makeText(getApplicationContext(),gamesArray[1], Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), gamesArray[3], Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), gamesArray[6], Toast.LENGTH_SHORT).show();
+        String [] mammornasMamma = gamesArray;
+        mammornasMamma[0] = "Game";
+        //Toast.makeText(getApplicationContext(), mammornasMamma[0], Toast.LENGTH_SHORT).show();
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, mammornasMamma); //Fixa en lösning!!
+        AutoCompleteTextView textView = (AutoCompleteTextView)
+                findViewById(R.id.gameTxt);
+        textView.setAdapter(adapter);
 
     }
-
-    private static final String[] GameName = new String[]  {"World of Warcraft", "League of Legends", "Counter-Strike", "Minecraft"};
 }
