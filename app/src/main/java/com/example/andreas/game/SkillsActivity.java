@@ -14,7 +14,7 @@
 public class SkillsActivity extends AppCompatActivity {
     int numberOfCheckboxesChecked = 0;
 
-    public static String textEtt/*, textTva, textTre,textFyra, textFem*/;
+    public static String textEtt;
 
     @Override
     protected void onCreate(Bundle icicle) {

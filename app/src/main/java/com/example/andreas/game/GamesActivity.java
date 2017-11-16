@@ -83,7 +83,7 @@ public class GamesActivity extends AppCompatActivity {
         toggleButton4 = (ToggleButton) findViewById(R.id.toggleButton4);
         toggleButton5 = (ToggleButton) findViewById(R.id.toggleButton5);
         toggleButton6 = (ToggleButton) findViewById(R.id.toggleButton6);
-        
+
 
         button7.setOnClickListener(
                 new View.OnClickListener() {
@@ -219,10 +219,9 @@ public class GamesActivity extends AppCompatActivity {
 
         String [] mammornasMamma = gamesArray;
         mammornasMamma[0] = "Game";
-        //Toast.makeText(getApplicationContext(), mammornasMamma[0], Toast.LENGTH_SHORT).show();
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, mammornasMamma); //Fixa en lösning!!
+                android.R.layout.simple_dropdown_item_1line, mammornasMamma);
         AutoCompleteTextView textView = (AutoCompleteTextView)
                 findViewById(R.id.gameTxt);
         textView.setAdapter(adapter);

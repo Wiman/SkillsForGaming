@@ -30,7 +30,7 @@ public class API {
         return name;
     }
 
-    public String getGameDescribtion() {
+    public String getGameDescription() {
         return gameDescription;
     }
 
