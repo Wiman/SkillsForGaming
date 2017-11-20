@@ -57,7 +57,7 @@ public class AllSkillsActivity extends AppCompatActivity {
                     //Toast.makeText(getApplicationContext(), String.valueOf(h.get_id()), Toast.LENGTH_SHORT).show();
                 }
                 for (API y: games){
-                    Log.d("name" , String.valueOf(y.getGameSkills()));
+                    Log.d("gameSkillss" , String.valueOf(y.getGameSkills()));
                     gamesSkillsArray [Integer.valueOf(y.get_id())]=String.valueOf(y.getGameSkills());
                     //Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(y.get_id())], Toast.LENGTH_SHORT).show();
 

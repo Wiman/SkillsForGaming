@@ -131,7 +131,7 @@ public class GamesActivity extends AppCompatActivity {
 
     public String SpelInfo(String game, String rank, String playTime) {
 
-        String butt = "";
+        String butt = "\n";
         //int points = 0;
         int time = Integer.parseInt(playTime);
 

@@ -2,6 +2,7 @@ package com.example.andreas.game;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import static com.example.andreas.game.GamesActivity.game;
@@ -16,6 +17,7 @@ import static com.example.andreas.game.GamesActivity.toggleEtt;
 
 public class GResActivity extends AppCompatActivity {
     TextView textView9;
+    SeekBar seekbar1, seekbar2, seekbar3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +42,16 @@ public class GResActivity extends AppCompatActivity {
 
         spelSkills = spelSkills + "\nFlexibilitet \nFokus \nBeslutsförmåga";
 
+        seekbar1 = (SeekBar) findViewById(R.id.seekbar1);
+        seekbar2 = (SeekBar) findViewById(R.id.seekbar2);
+        seekbar3 = (SeekBar) findViewById(R.id.seekbar3);
+
+        seekbar1.getProgress();
+        seekbar2.getProgress();
+        seekbar3.getProgress();
+
         textView9 = (TextView) findViewById(R.id.textView9);
-        textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex)+ /*"\n" + */buttButt + "\n" +"\n" +"\n" +spelSkills);
+        textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex)+ "\n" + buttButt + "\n" +"\n" +"\n" +spelSkills);
 
 
 
@@ -57,22 +67,22 @@ public class GResActivity extends AppCompatActivity {
             result = result + "Du har bra stresstålighet";
         }
         if (toggleTva.equals("Ja")){
-            result = result + "\nDu har en ledaregenskaper";
+            result = result + "\n\n\nDu har en ledaregenskaper";
         }
         else {
-           // result = result + "\nSpelaren är inte en ledare";
+            result = result + "\n\n\nSpelaren är inte en ledare";
         }
         /*if (toggleTre.equals("Ja")){
-            result = result + "\nSpelaren har skapat ett lag";
+            result = result + "\n\nSpelaren har skapat ett lag";
         }
         else {
             result = result + "\nSpelaren har inte skapat ett lag";
         }*/
         if (toggleFyra.equals("Spelar i lag")){
-            result = result + "\nDu har enklare för lagarbete";
+            result = result + "\n\n\nDu har enklare för lagarbete";
         }
         else {
-            result = result + "\nDu jobbar helst ensam";
+            result = result + "\n\n\nDu jobbar helst ensam";
         }
         /*if (toggleFem.equals("Ja")){
             result = result + "\nHar deltagit i en turnering";
