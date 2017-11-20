@@ -209,7 +209,7 @@ public class GamesActivity extends AppCompatActivity {
             //butt = butt + "\npoints: " + points;
 
             if (time <= 199) {
-                butt = "Din inGameTime är för låg";
+                butt = "\nDin inGameTime är för låg";
             }
 
             return butt;
