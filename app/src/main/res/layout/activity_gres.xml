@@ -9,23 +9,24 @@
 
     <SeekBar
         android:id="@+id/seekbar1"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
         android:layout_marginTop="116dp"
-        android:max="5"
+        android:max="2"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/seekbar2"
         app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 
     <SeekBar
         android:id="@+id/seekbar2"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
         android:layout_marginTop="48dp"
+        android:max="2"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/seekbar1"
         app:layout_constraintTop_toTopOf="@+id/seekbar1" />
@@ -33,13 +34,25 @@
 
     <SeekBar
         android:id="@+id/seekbar3"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
         android:layout_marginTop="48dp"
+        android:max="2"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="@+id/seekbar2" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="  Dåligt    Mellan       Bra"
+        app:layout_constraintBottom_toTopOf="@+id/seekbar1"
+        app:layout_constraintEnd_toEndOf="@+id/seekbar1"
+        app:layout_constraintStart_toStartOf="@+id/seekbar1" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
