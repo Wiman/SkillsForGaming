@@ -13,10 +13,10 @@
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="80dp"
-        android:text="Hur bra stämmer det?"
+        android:text="Hur bra passar det?"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="24dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
         android:id="@+id/seekbar1"

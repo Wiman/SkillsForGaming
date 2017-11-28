@@ -13,7 +13,7 @@ public class API {
     private int _id;
     private String name;
     private String gameDescription;
-    private String[] gameSkillss;
+    private List[] gameSkillss;
 
     public API(int _id, String name) {
         this._id = _id;
@@ -34,7 +34,7 @@ public class API {
         return gameDescription;
     }
 
-    public String[] getGameSkills() {
+    public List[] getGameSkills() {
         return gameSkillss;
     }
 }
