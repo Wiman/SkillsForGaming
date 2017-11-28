@@ -65,13 +65,13 @@ public class GResActivity extends AppCompatActivity {
         String result="";
 
         if (toggleEtt.equals("Ja")){
-            result = result + "Spelaren blir lätt stressad";
+            result = result + "Du borde öva din stresstålighet";
         }
         else {
-            result = result + "Du har bra stresstålighet";
+            result = result + "Du bör ha bra stresstålighet";
         }
         if (toggleTva.equals("Ja")){
-            result = result + "\n\n\nDu har en ledaregenskaper";
+            result = result + "\n\n\nDu bör ha ledaregenskaper";
         }
         else {
             result = result + "\n\n\nSpelaren är inte en ledare";
