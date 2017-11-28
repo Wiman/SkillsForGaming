@@ -74,7 +74,7 @@ public class GResActivity extends AppCompatActivity {
             result = result + "\n\n\nDu bör ha ledaregenskaper";
         }
         else {
-            result = result + "\n\n\nSpelaren är inte en ledare";
+            result = result + "\n\n\nDu borde öva på ledaregenskaper";
         }
         /*if (toggleTre.equals("Ja")){
             result = result + "\n\nSpelaren har skapat ett lag";
@@ -83,10 +83,10 @@ public class GResActivity extends AppCompatActivity {
             result = result + "\nSpelaren har inte skapat ett lag";
         }*/
         if (toggleFyra.equals("Spelar i lag")){
-            result = result + "\n\n\nDu har enklare för lagarbete";
+            result = result + "\n\n\nDu kan ha enklare för lagarbete";
         }
         else {
-            result = result + "\n\n\nDu jobbar helst ensam";
+            result = result + "\n\n\nDu kanske helst jobbar ensam";
         }
         /*if (toggleFem.equals("Ja")){
             result = result + "\nHar deltagit i en turnering";
