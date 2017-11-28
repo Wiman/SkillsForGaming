@@ -30,13 +30,13 @@ public class GResActivity extends AppCompatActivity {
 
         switch (game){
             case "world of warcraft":
-                spelSkills = "Du bör ha dessa kompetenser:\n \nTålamod\nKommunikationsfärdigheter\nLedarskapsförmågor";
+                spelSkills = "\nDu bör ha dessa kompetenser: \nTålamod\nKommunikationsfärdigheter\nLedarskapsförmågor";
                 break;
             case "league of legends":
-                spelSkills = "Du bör ha dessa kompetenser:\n \nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
+                spelSkills = "\nDu bör ha dessa kompetenser: \nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
                 break;
             case "counter strike":
-                spelSkills = "Du bör ha dessa kompetenser:\n \nProblemlösning\nKommunikativa förmågor\nAnsvarstagande ";
+                spelSkills = "\nDu bör ha dessa kompetenser: \nProblemlösning\nKommunikativa förmågor\nAnsvarstagande ";
                 break;
             default:
                 spelSkills = "Du har nog stavat fel!";
