@@ -13,9 +13,10 @@
         android:layout_height="30dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="80dp"
-        android:text="Hur bra passar det?"
+        android:text="Hur bra stämmer det?"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="24dp" />
 
     <SeekBar
         android:id="@+id/seekbar1"
