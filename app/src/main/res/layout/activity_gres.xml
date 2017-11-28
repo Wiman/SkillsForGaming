@@ -77,13 +77,21 @@
         <TextView
             android:id="@+id/textView9"
             android:layout_width="190dp"
-            android:layout_height="347dp"
+            android:layout_height="116dp"
             android:layout_margin="25dp"
             android:text="@string/hej"
             android:textColor="@android:color/background_dark"
             android:textSize="14sp"
             tools:layout_editor_absoluteX="100dp"
             tools:layout_editor_absoluteY="200dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="331dp"
+            android:layout_height="238dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/hej" />
 
         <TextView
             android:layout_width="match_parent"

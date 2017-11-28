@@ -76,6 +76,7 @@ public class AllSkillsActivity extends AppCompatActivity {
 
             case "WoW":
 
+
                 textView8.setText("World of Warcraft");
                 textView13.setText(
                                 "World of Warcraft är ett MMORPG(Massive Multiplayer Online Roleplaying Game. \n"  +

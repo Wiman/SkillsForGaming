@@ -17,6 +17,7 @@ import static com.example.andreas.game.GamesActivity.toggleEtt;
 
 public class GResActivity extends AppCompatActivity {
     TextView textView9;
+    TextView textView15;
     SeekBar seekbar1, seekbar2, seekbar3;
 
     @Override
@@ -51,8 +52,9 @@ public class GResActivity extends AppCompatActivity {
         seekbar3.getProgress();
 
         textView9 = (TextView) findViewById(R.id.textView9);
-        textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex)+ "\n" + buttButt + "\n" +"\n" +"\n" +spelSkills);
-
+        textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex));
+        textView15 = (TextView) findViewById(R.id.textView15) ;
+        textView15.setText(buttButt +"\n" + spelSkills);
 
 
     }
