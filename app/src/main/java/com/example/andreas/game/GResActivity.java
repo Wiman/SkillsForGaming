@@ -68,13 +68,13 @@ public class GResActivity extends AppCompatActivity {
             result = result + "Du borde öva din stresstålighet";
         }
         else {
-            result = result + "Du bör ha bra stresstålighet";
+            result = result + "Du bör vara stresstålig";
         }
         if (toggleTva.equals("Ja")){
             result = result + "\n\n\nDu bör ha ledaregenskaper";
         }
         else {
-            result = result + "\n\n\nDu borde öva på ledaregenskaper";
+            result = result + "\n\n\n Hur bra leder du ett team?";
         }
         /*if (toggleTre.equals("Ja")){
             result = result + "\n\nSpelaren har skapat ett lag";
