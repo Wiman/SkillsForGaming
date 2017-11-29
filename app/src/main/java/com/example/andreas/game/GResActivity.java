@@ -74,7 +74,7 @@ public class GResActivity extends AppCompatActivity {
             result = result + "\n\n\nDu bör ha ledaregenskaper";
         }
         else {
-            result = result + "\n\n\n Hur bra leder du ett team?";
+            result = result + "\n\n\nHur bra leder du ett team?";
         }
         /*if (toggleTre.equals("Ja")){
             result = result + "\n\nSpelaren har skapat ett lag";
