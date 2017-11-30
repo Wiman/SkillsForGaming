@@ -125,6 +125,14 @@ public class GamesActivity extends AppCompatActivity {
             }
 
         });
+        gameTxt.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (gameTxt.getText().toString().equals("World of Warcraft")){
+                    rankTxt.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
 
     }
 
@@ -132,7 +140,7 @@ public class GamesActivity extends AppCompatActivity {
 
         String butt = "\n";
         //int points = 0;
-        int time= 0;
+        int time;
 
         if (playTime.equals("")){
             playTime = "1";
@@ -160,7 +168,7 @@ public class GamesActivity extends AppCompatActivity {
                     //butt = "Du valde CS:GO";
                     break;
                 default:
-                    //butt = "Appen hittar inte Spelnamn/Rank";
+                    butt = "Appen hittar inte Spelnamn/Rank";
                     break;
             }
             switch (rank) {

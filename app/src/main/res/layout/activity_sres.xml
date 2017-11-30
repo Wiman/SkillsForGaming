@@ -40,7 +40,7 @@
             android:layout_width="337dp"
             android:layout_height="70dp"
             android:layout_margin="25dp"
-            android:text="Hello Magnus Curling, It's me! Robin Speaking"
+            android:text="Hello"
             android:textColor="@android:color/background_dark"
             android:textSize="14sp"
             tools:layout_editor_absoluteX="100dp"
