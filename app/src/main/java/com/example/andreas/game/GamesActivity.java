@@ -131,6 +131,9 @@ public class GamesActivity extends AppCompatActivity {
                 if (gameTxt.getText().toString().equals("World of Warcraft")){
                     rankTxt.setVisibility(View.INVISIBLE);
                 }
+                else {
+                    rankTxt.setVisibility(View.VISIBLE);
+                }
             }
         });
 
