@@ -30,27 +30,27 @@ public class GResActivity extends AppCompatActivity {
 
         switch (game){
             case "world of warcraft":
-                spelSkills = "\nTålamod \nKommunikationsfärdigheter \nLedarskapsförmågor";
+                spelSkills = "\nTålamod \n\nKommunikationsfärdigheter \n\nLedarskapsförmågor";
                 break;
             case "league of legends":
-                spelSkills = "\nDu utvecklar dessa kompetenser: \nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
+                spelSkills = "\nInitiativtagare \n\nAnsvarstagande \n\nPrioriteringsförmåga";
                 break;
             case "counter strike":
-                spelSkills = "\nDu utvecklar dessa kompetenser: \nProblemlösning\nKommunikativa förmågor\nAnsvarstagande ";
+                spelSkills = "\nProblemlösning\n\nKommunikativa förmågor\n\nAnsvarstagande ";
                 break;
             default:
                 spelSkills = "Du har nog stavat fel!";
         }
 
-        spelSkills = spelSkills + "\nFlexibilitet \nFokus \nBeslutsförmåga";
+        spelSkills = spelSkills + "\n\nFlexibilitet \n\nFokus \n\nBeslutsförmåga";
 
-        seekbar1 = (SeekBar) findViewById(R.id.seekbar1);
-        seekbar2 = (SeekBar) findViewById(R.id.seekbar2);
-        seekbar3 = (SeekBar) findViewById(R.id.seekbar3);
+        //seekbar1 = (SeekBar) findViewById(R.id.seekBar1);
+        //seekbar2 = (SeekBar) findViewById(R.id.seekBar2);
+        //seekbar3 = (SeekBar) findViewById(R.id.seekBar3);
 
-        seekbar1.getProgress();
-        seekbar2.getProgress();
-        seekbar3.getProgress();
+        //seekbar1.getProgress();
+        //seekbar2.getProgress();
+        //seekbar3.getProgress();
 
         textView9 = (TextView) findViewById(R.id.textView9);
         textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex)+"\n" + spelSkills);
