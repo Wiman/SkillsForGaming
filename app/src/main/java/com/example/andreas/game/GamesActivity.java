@@ -43,8 +43,6 @@ public class GamesActivity extends AppCompatActivity {
         APIInt api = retrofit.create(APIInt.class);
 
         Call<List<API>> call = api.getGames();
-
-
         call.enqueue(new Callback<List<API>>() {
             @Override
             public void onResponse(Call<List<API>> call, Response<List<API>> response) {
@@ -106,6 +104,7 @@ public class GamesActivity extends AppCompatActivity {
                          toggleFem  = toggleButton5.getText().toString();
                          toggleSex  = toggleButton6.getText().toString();
 
+
                          buttButt = SpelInfo(game, rank, playTime);
 
 
@@ -133,7 +132,16 @@ public class GamesActivity extends AppCompatActivity {
 
         String butt = "\n";
         //int points = 0;
-        int time = Integer.parseInt(playTime);
+        int time= 0;
+
+        if (playTime.equals("")){
+            playTime = "1";
+            time = Integer.parseInt(playTime);
+        }
+        else {
+            time = Integer.parseInt(playTime);
+        }
+
 
         rank = rank.toLowerCase();
         rank = rank.trim();
@@ -211,6 +219,8 @@ public class GamesActivity extends AppCompatActivity {
             if (time <= 199) {
                 butt = "\nDin inGameTime är för låg";
             }
+
+
 
             return butt;
 

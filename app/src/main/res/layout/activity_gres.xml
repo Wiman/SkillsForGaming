@@ -89,7 +89,7 @@
         <TextView
             android:id="@+id/textView9"
             android:layout_width="190dp"
-            android:layout_height="116dp"
+            android:layout_height="131dp"
             android:layout_margin="25dp"
             android:text="@string/hej"
             android:textColor="@android:color/background_dark"
@@ -99,16 +99,20 @@
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="331dp"
-            android:layout_height="238dp"
+            android:layout_width="241dp"
+            android:layout_height="222dp"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
             android:text="@string/hej" />
 
         <TextView
+            android:id="@+id/textView16"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" " />
+            android:layout_height="47dp"
+            android:text="     Här kommer ett sjukt bra jobbtips!"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
