@@ -11,8 +11,8 @@
         android:id="@+id/textView17"
         android:layout_width="163dp"
         android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
         android:text="Hur bra passar det?"
         android:textColor="@android:color/background_dark"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="@dimen/_90sdp"
         android:max="2"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/seekbar2"
@@ -54,10 +54,54 @@
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="@+id/seekbar2" />
 
+    <SeekBar
+        android:id="@+id/seekbar4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp"
+        android:max="2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekbar3" />
+
+    <SeekBar
+        android:id="@+id/seekbar5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp"
+        android:max="2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekbar4" />
+
+    <SeekBar
+        android:id="@+id/seekbar6"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp"
+        android:max="2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekbar5" />
+
+    <SeekBar
+        android:id="@+id/seekbar7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="30dp"
+        android:max="2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/seekbar6" />
+
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
+        android:layout_width="163dp"
+        android:layout_height="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="  Dåligt    Mellan       Bra"
@@ -74,7 +118,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="49dp">
-
+        android:layout_marginTop=""
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
@@ -89,7 +133,7 @@
         <TextView
             android:id="@+id/textView9"
             android:layout_width="190dp"
-            android:layout_height="131dp"
+            android:layout_height="299dp"
             android:layout_margin="25dp"
             android:text="@string/hej"
             android:textColor="@android:color/background_dark"
@@ -98,20 +142,12 @@
             tools:layout_editor_absoluteY="200dp" />
 
         <TextView
-            android:id="@+id/textView15"
-            android:layout_width="241dp"
-            android:layout_height="222dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:text="@string/hej" />
-
-        <TextView
             android:id="@+id/textView16"
             android:layout_width="match_parent"
             android:layout_height="47dp"
+            android:layout_marginTop="25dp"
             android:text="     Här kommer ett sjukt bra jobbtips!"
             android:textColor="@android:color/background_dark"
-            android:layout_marginTop="25dp"
             android:textSize="20sp" />
 
 

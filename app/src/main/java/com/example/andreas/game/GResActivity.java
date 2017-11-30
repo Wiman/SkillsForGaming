@@ -30,13 +30,13 @@ public class GResActivity extends AppCompatActivity {
 
         switch (game){
             case "world of warcraft":
-                spelSkills = "\nDu bör ha dessa kompetenser: \nTålamod \nKommunikationsfärdigheter \nLedarskapsförmågor";
+                spelSkills = "\nDu utvecklar dessa kompetenser: \nTålamod \nKommunikationsfärdigheter \nLedarskapsförmågor";
                 break;
             case "league of legends":
-                spelSkills = "\nDu bör ha dessa kompetenser: \nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
+                spelSkills = "\nDu utvecklar dessa kompetenser: \nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
                 break;
             case "counter strike":
-                spelSkills = "\nDu bör ha dessa kompetenser: \nProblemlösning\nKommunikativa förmågor\nAnsvarstagande ";
+                spelSkills = "\nDu utvecklar dessa kompetenser: \nProblemlösning\nKommunikativa förmågor\nAnsvarstagande ";
                 break;
             default:
                 spelSkills = "Du har nog stavat fel!";
@@ -53,9 +53,9 @@ public class GResActivity extends AppCompatActivity {
         seekbar3.getProgress();
 
         textView9 = (TextView) findViewById(R.id.textView9);
-        textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex));
-        textView15 = (TextView) findViewById(R.id.textView15) ;
-        textView15.setText(buttButt +"\n" + spelSkills);
+        textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex)+"\n" + spelSkills);
+        //textView15 = (TextView) findViewById(R.id.textView15) ;
+        //textView15.setText(buttButt +"\n" + spelSkills);
         textView17 = (TextView) findViewById(R.id.textView17);
 
 
