@@ -86,7 +86,7 @@ public class GResActivity extends AppCompatActivity {
             result = result + "\n\nDu kan ha enklare för lagarbete";
         }
         else {
-            result = result + "\n\njobbar oftast ensam";
+            result = result + "\n\njobbar helst ensam";
         }
         /*if (toggleFem.equals("Ja")){
             result = result + "\nHar deltagit i en turnering";
