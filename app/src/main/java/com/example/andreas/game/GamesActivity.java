@@ -128,7 +128,7 @@ public class GamesActivity extends AppCompatActivity {
         gameTxt.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if (gameTxt.getText().toString().equals("World of Warcraft")){
+                if (gameTxt.getText().toString().equals("World of Warcraft") || gameTxt.getText().toString().equals("world of warcraft")){
                     rankTxt.setVisibility(View.INVISIBLE);
                 }
                 else {

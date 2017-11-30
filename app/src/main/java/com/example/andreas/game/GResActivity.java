@@ -30,7 +30,7 @@ public class GResActivity extends AppCompatActivity {
 
         switch (game){
             case "world of warcraft":
-                spelSkills = "\nDu utvecklar dessa kompetenser: \nTålamod \nKommunikationsfärdigheter \nLedarskapsförmågor";
+                spelSkills = "\nTålamod \nKommunikationsfärdigheter \nLedarskapsförmågor";
                 break;
             case "league of legends":
                 spelSkills = "\nDu utvecklar dessa kompetenser: \nInitiativtagare \nAnsvarstagande \nPrioriteringsförmåga";
@@ -56,7 +56,7 @@ public class GResActivity extends AppCompatActivity {
         textView9.setText(Resultat(toggleEtt, toggleTva, toggleTre, toggleFyra, toggleFem, toggleSex)+"\n" + spelSkills);
         //textView15 = (TextView) findViewById(R.id.textView15) ;
         //textView15.setText(buttButt +"\n" + spelSkills);
-        textView17 = (TextView) findViewById(R.id.textView17);
+
 
 
     }
@@ -68,13 +68,13 @@ public class GResActivity extends AppCompatActivity {
             result = result + "Du borde öva din stresstålighet";
         }
         else {
-            result = result + "Du bör vara stresstålig";
+            result = result + "Du är stresstålig";
         }
         if (toggleTva.equals("Ja")){
-            result = result + "\n\n\nDu bör ha ledaregenskaper";
+            result = result + "\n\nDu kan leda andra";
         }
         else {
-            result = result + "\n\n\nHur bra leder du ett team?";
+            result = result + "\n\nHur bra leder du ett team?";
         }
         /*if (toggleTre.equals("Ja")){
             result = result + "\n\nSpelaren har skapat ett lag";
@@ -83,10 +83,10 @@ public class GResActivity extends AppCompatActivity {
             result = result + "\nSpelaren har inte skapat ett lag";
         }*/
         if (toggleFyra.equals("Spelar i lag")){
-            result = result + "\n\n\nDu kan ha enklare för lagarbete";
+            result = result + "\n\nDu kan ha enklare för lagarbete";
         }
         else {
-            result = result + "\n\n\nDu kanske helst jobbar ensam";
+            result = result + "\n\njobbar oftast ensam";
         }
         /*if (toggleFem.equals("Ja")){
             result = result + "\nHar deltagit i en turnering";
