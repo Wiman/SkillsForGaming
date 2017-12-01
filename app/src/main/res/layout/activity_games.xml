@@ -170,12 +170,21 @@
                 android:textOn="Ja"/>
 
             <Button
+                android:id="@+id/button2"
+                android:layout_width="105dp"
+                android:layout_height="60dp"
+                android:text="Add Game +"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/minknapp"
+                />
+
+            <Button
                 android:id="@+id/button7"
                 android:layout_width="105dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginBottom="15dp"
                 android:background="@android:color/holo_blue_dark"
                 android:text="Submit"

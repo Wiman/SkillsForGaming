@@ -76,7 +76,8 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView14"
             android:layout_alignStart="@+id/textView14"
-            android:layout_below="@+id/textView14" />
+            android:layout_below="@+id/textView14"
+            android:max="2"/>
 
         <SeekBar
             android:id="@+id/seekBar3"
@@ -85,7 +86,8 @@
             android:layout_alignLeft="@+id/seekBar2"
             android:layout_alignStart="@+id/seekBar2"
             android:layout_below="@+id/seekBar2"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:max="2"/>
 
         <SeekBar
             android:id="@+id/seekBar4"
@@ -94,7 +96,8 @@
             android:layout_alignLeft="@+id/seekBar3"
             android:layout_alignStart="@+id/seekBar3"
             android:layout_below="@+id/seekBar3"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:max="2"/>
 
         <SeekBar
             android:id="@+id/seekBar5"
@@ -103,7 +106,8 @@
             android:layout_alignLeft="@+id/seekBar4"
             android:layout_alignStart="@+id/seekBar4"
             android:layout_below="@+id/seekBar4"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:max="2"/>
 
         <SeekBar
             android:id="@+id/seekBar6"
@@ -112,7 +116,8 @@
             android:layout_alignLeft="@+id/seekBar5"
             android:layout_alignStart="@+id/seekBar5"
             android:layout_below="@+id/seekBar5"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:max="2" />
 
         <SeekBar
             android:id="@+id/seekBar7"
@@ -121,7 +126,8 @@
             android:layout_alignLeft="@+id/seekBar6"
             android:layout_alignStart="@+id/seekBar6"
             android:layout_below="@+id/seekBar6"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:max="2"/>
 
         <SeekBar
             android:id="@+id/seekBar8"
@@ -130,7 +136,8 @@
             android:layout_alignLeft="@+id/seekBar7"
             android:layout_alignStart="@+id/seekBar7"
             android:layout_below="@+id/seekBar7"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:max="2"/>
 
         <SeekBar
             android:id="@+id/seekBar9"
@@ -139,7 +146,8 @@
             android:layout_alignLeft="@+id/seekBar8"
             android:layout_alignStart="@+id/seekBar8"
             android:layout_below="@+id/seekBar8"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:max="2"/>
 
         <SeekBar
             android:id="@+id/seekBar10"
@@ -148,7 +156,8 @@
             android:layout_alignLeft="@+id/seekBar9"
             android:layout_alignStart="@+id/seekBar9"
             android:layout_below="@+id/seekBar9"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:max="2"/>
 
         <TextView
             android:id="@+id/textView15"
