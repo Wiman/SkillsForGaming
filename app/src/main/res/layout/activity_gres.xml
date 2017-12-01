@@ -150,5 +150,25 @@
             android:layout_below="@+id/seekBar9"
             android:layout_marginTop="16dp" />
 
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView14"
+            android:text="         Stämmer det?" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:text="                     ▼" />
+            android:textSize="30sp" />
+
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
