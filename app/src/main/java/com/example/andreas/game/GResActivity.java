@@ -83,7 +83,7 @@ public class GResActivity extends AppCompatActivity {
             result = result + "\nSpelaren har inte skapat ett lag";
         }*/
         if (toggleFyra.equals("Spelar i lag")){
-            result = result + "\n\nDu kan ha enklare för lagarbete";
+            result = result + "\n\nDuktig på lagarbete";
         }
         else {
             result = result + "\n\njobbar helst ensam";
