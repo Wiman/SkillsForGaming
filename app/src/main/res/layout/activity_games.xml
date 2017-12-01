@@ -175,8 +175,7 @@
                 android:layout_height="60dp"
                 android:text="Add Game +"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:background="@drawable/minknapp"
-                />
+                android:background="@drawable/minknapp" />
 
             <Button
                 android:id="@+id/button7"
@@ -186,8 +185,8 @@
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginBottom="15dp"
-                android:background="@android:color/holo_blue_dark"
                 android:text="Submit"
+                android:background="@drawable/minknapp2"
                 android:textColorLink="@color/colorAccent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
