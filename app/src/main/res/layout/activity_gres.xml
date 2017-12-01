@@ -121,7 +121,7 @@
             android:layout_alignLeft="@+id/seekBar6"
             android:layout_alignStart="@+id/seekBar6"
             android:layout_below="@+id/seekBar6"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="13dp" />
 
         <SeekBar
             android:id="@+id/seekBar8"
@@ -139,7 +139,7 @@
             android:layout_alignLeft="@+id/seekBar8"
             android:layout_alignStart="@+id/seekBar8"
             android:layout_below="@+id/seekBar8"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="12dp" />
 
         <SeekBar
             android:id="@+id/seekBar10"
@@ -148,7 +148,7 @@
             android:layout_alignLeft="@+id/seekBar9"
             android:layout_alignStart="@+id/seekBar9"
             android:layout_below="@+id/seekBar9"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="12dp" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
