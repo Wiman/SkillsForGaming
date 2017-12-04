@@ -35,7 +35,7 @@ public class GResActivity extends AppCompatActivity {
             case "league of legends":
                 spelSkills = "\nInitiativtagare \n\nAnsvarstagande \n\nPrioriteringsförmåga";
                 break;
-            case "counter strike":
+            case "counter-strike":
                 spelSkills = "\nProblemlösning\n\nKommunikativa förmågor\n\nAnsvarstagande ";
                 break;
             default:

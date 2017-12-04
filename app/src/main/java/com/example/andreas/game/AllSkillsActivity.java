@@ -175,7 +175,7 @@ public class AllSkillsActivity extends AppCompatActivity {
 
             case "Cs":
 
-                textView8.setText("Counter Strike");
+                textView8.setText("Counter-Strike");
 
                 textView13.setText(gamesDescriptionArray[3]);
 

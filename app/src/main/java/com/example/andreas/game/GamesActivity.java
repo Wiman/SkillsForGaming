@@ -174,7 +174,7 @@ public class GamesActivity extends AppCompatActivity {
                 case "league of legends":
                     //butt = "Du valde LoL";
                     break;
-                case "counter strike":
+                case "counter-strike":
                     //butt = "Du valde CS:GO";
                     break;
                 default:
