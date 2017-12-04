@@ -101,6 +101,10 @@ public class SkillsActivity extends AppCompatActivity {
                         clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
