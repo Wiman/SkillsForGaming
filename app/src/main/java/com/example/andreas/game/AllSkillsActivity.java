@@ -46,23 +46,23 @@ public class AllSkillsActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<API>> call, Response<List<API>> response) {
                 List<API> games = response.body();
-                String [] gamesDescriptionArray= new String[8];
+                String[] gamesDescriptionArray = new String[8];
                 gamesDescriptionArray[0] = "Game";
-                String [] gamesSkillsArray= new String[8];
+                String[] gamesSkillsArray = new String[8];
                 gamesSkillsArray[0] = "Skills";
 
-                for (API h: games){
-                    Log.d("gameDescription" , String.valueOf(h.getGameDescription()));
-                    gamesDescriptionArray [Integer.valueOf(h.get_id())]=String.valueOf(h.getGameDescription());
+                for (API h : games) {
+                    Log.d("gameDescription", String.valueOf(h.getGameDescription()));
+                    gamesDescriptionArray[Integer.valueOf(h.get_id())] = String.valueOf(h.getGameDescription());
                     //Toast.makeText(getApplicationContext(), String.valueOf(h.get_id()), Toast.LENGTH_SHORT).show();
                 }
-                for (API y: games){
-                    Log.d("gameSkillss" , String.valueOf(y.getGameSkills()));
-                    gamesSkillsArray [Integer.valueOf(y.get_id())]=String.valueOf(y.getGameSkills());
+                for (API y : games) {
+                    Log.d("gameSkillss", String.valueOf(y.getGameSkills()));
+                    gamesSkillsArray[Integer.valueOf(y.get_id())] = String.valueOf(y.getGameSkills());
                     //Toast.makeText(getApplicationContext(), gamesArray[Integer.valueOf(y.get_id())], Toast.LENGTH_SHORT).show();
 
                 }
-                  GameDesSkills(gamesDescriptionArray, gamesSkillsArray);
+                GameDesSkills(gamesDescriptionArray, gamesSkillsArray);
 
             }
 
@@ -70,9 +70,9 @@ public class AllSkillsActivity extends AppCompatActivity {
             public void onFailure(Call<List<API>> call, Throwable t) {
                 Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
             }
-        });}
+        });
 
-       /* switch (enkelt) {
+        switch (enkelt) {
 
             case "WoW":
 
@@ -159,7 +159,8 @@ public class AllSkillsActivity extends AppCompatActivity {
                         "Engelska");
                 break;
         }
-    }*/
+    }
+
     public void GameDesSkills (String[]gamesDescriptionArray, String[]gamesSkillsArray){
         switch (enkelt) {
 
@@ -169,7 +170,7 @@ public class AllSkillsActivity extends AppCompatActivity {
 
                 textView13.setText(gamesDescriptionArray[1]);
 
-                textView12.setText(gamesSkillsArray[1]);
+               // textView12.setText(gamesSkillsArray[1]);
                 break;
 
             case "Cs":
@@ -178,7 +179,7 @@ public class AllSkillsActivity extends AppCompatActivity {
 
                 textView13.setText(gamesDescriptionArray[3]);
 
-                textView12.setText (gamesSkillsArray[3]);
+               // textView12.setText (gamesSkillsArray[3]);
                 break;
 
             case "LoL":
@@ -187,7 +188,7 @@ public class AllSkillsActivity extends AppCompatActivity {
 
                 textView13.setText(gamesDescriptionArray[2]);
 
-                textView12.setText(gamesSkillsArray[2]);
+              //  textView12.setText(gamesSkillsArray[2]);
                 break;
         }
     }
