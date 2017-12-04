@@ -64,7 +64,7 @@ public class SResActivity extends AppCompatActivity {
 
        if(textEtt == null){
            imageView.setImageResource(R.drawable.tecken);
-           textView11.setText("Du har inte valt något bra spel!!");
+           textView11.setText("Vi har inget specefikt spel som ger just dom kompetenserna");
        }
        else{
 

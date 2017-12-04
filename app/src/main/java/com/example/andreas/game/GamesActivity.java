@@ -133,7 +133,14 @@ public class GamesActivity extends AppCompatActivity {
                 }
                 else {
                     rankTxt.setVisibility(View.VISIBLE);
+
                 }
+                if(gameTxt.getText().toString().equals("")){
+                    button7.setVisibility(View.INVISIBLE);
+                }else{
+                    button7.setVisibility(View.VISIBLE);
+                }
+
             }
         });
 
