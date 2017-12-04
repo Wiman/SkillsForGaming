@@ -38,7 +38,7 @@ public class SkillsActivity extends AppCompatActivity {
 
 
 
-        Button clickMe = (Button) findViewById(R.id.getGame);
+        final Button clickMe = (Button) findViewById(R.id.getGame);
 
         clickMe.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -85,6 +85,8 @@ public class SkillsActivity extends AppCompatActivity {
             }
 
         });
+        clickMe.setVisibility(View.INVISIBLE);
+
         Konfliktlösningsförmåga.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -96,6 +98,7 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
                     }
@@ -116,8 +119,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -136,8 +143,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -156,8 +167,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -176,8 +191,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -196,8 +215,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -216,8 +239,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -237,8 +264,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -257,8 +288,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -277,8 +312,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -297,8 +336,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -317,8 +360,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
@@ -337,8 +384,12 @@ public class SkillsActivity extends AppCompatActivity {
                     // change your counter accordingly
                     if (isChecked) {
                         numberOfCheckboxesChecked++;
+                        clickMe.setVisibility(View.VISIBLE);
                     } else {
                         numberOfCheckboxesChecked--;
+                        if (numberOfCheckboxesChecked == 0){
+                            clickMe.setVisibility(View.INVISIBLE);
+                        }
                     }
 
                     // now everything is fine and you can do whatever
