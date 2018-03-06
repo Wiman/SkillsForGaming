@@ -148,7 +148,7 @@ public class GamesActivity extends AppCompatActivity {
 
     public String SpelInfo(String game, String rank, String playTime) {
 
-        String butt = "\n";
+        String stringHolder = "\n";
         //int points = 0;
         int time;
 
@@ -169,87 +169,87 @@ public class GamesActivity extends AppCompatActivity {
 
             switch (game) {
                 case "world of warcraft":
-                    //butt = "Du valde WoW";
+                    //stringHolder = "Du valde WoW";
                     break;
                 case "league of legends":
-                    //butt = "Du valde LoL";
+                    //stringHolder = "Du valde LoL";
                     break;
                 case "counter-strike":
-                    //butt = "Du valde CS:GO";
+                    //stringHolder = "Du valde CS:GO";
                     break;
                 default:
-                    butt = "Appen hittar inte Spelnamn/Rank";
+                    stringHolder = "Appen hittar inte Spelnamn/Rank";
                     break;
             }
             switch (rank) {
                 case "bronze":
-                    butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
                     break;
                 case "silver":
-                    butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
                     break;
                 case "gold":
-                    butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
                     break;
                 case "platinum":
-                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 1;
                     break;
                 case "diamond":
-                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 2;
                     break;
                 case "master":
-                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 3;
                     break;
                 case "challenger":
-                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 4;
                     break;
                 case "gold nova":
-                    butt = butt + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är inte tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 1;
                     break;
                 case "master guardian":
-                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 1;
                     break;
                 case "legendary eagle":
-                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 1;
                     break;
                 case "supreme":
-                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 1;
                     break;
                 case "global elite":
-                    butt = butt + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
+                    stringHolder = stringHolder + "\nDin rank är tillräckligt hög för att styrka dina kompetenser";
                     //points = points + 1;
                     break;
                 default:
-                    butt = "Appen hittar inte Spelnamn/Rank";
+                    stringHolder = "Appen hittar inte Spelnamn/Rank";
                     break;
             }
 
-            //butt = butt + "\npoints: " + points;
+
 
             if (time <= 199) {
-                butt = "\nDin inGameTime är för låg";
+                stringHolder = "\nDin inGameTime är för låg";
             }
 
 
 
-            return butt;
+            return stringHolder;
 
     }
     public void ForToast (String[]gamesArray){
 
-        String [] mammornasMamma = gamesArray;
-        mammornasMamma[0] = "Game";
+        String [] InformationHolder = gamesArray;
+        InformationHolder[0] = "Game";
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_dropdown_item_1line, mammornasMamma);
+                android.R.layout.simple_dropdown_item_1line, InformationHolder);
         AutoCompleteTextView textView = (AutoCompleteTextView)
                 findViewById(R.id.gameTxt);
         textView.setAdapter(adapter);

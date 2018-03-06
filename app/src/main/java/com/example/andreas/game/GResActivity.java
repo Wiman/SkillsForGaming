@@ -6,7 +6,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import static com.example.andreas.game.GamesActivity.game;
-import static com.example.andreas.game.GamesActivity.buttButt;
 import static com.example.andreas.game.GamesActivity.toggleFem;
 import static com.example.andreas.game.GamesActivity.toggleFyra;
 import static com.example.andreas.game.GamesActivity.toggleSex;
